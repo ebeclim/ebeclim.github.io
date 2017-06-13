@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+
+
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/about.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/airhumide_dah.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/airhumide_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/airhumide_transformations.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/apropos.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/control_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/control_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/control_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cvc_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cvc_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cvc_intro.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/heat_airflow.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/heat_analogy.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/heat_inertia.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/heat_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/heat_radiation.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hvac_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hvac_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hvac_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hygrometry_ahu.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hygrometry_chart.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hygrometry_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index_en.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/mydoc_navtabs.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/regulation_1.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/regulation_2.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/regulation_intro.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/thermique_analogie.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/thermique_inertie.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/thermique_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/thermique_rayonnement.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/thermique_ventilation.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</urlset>

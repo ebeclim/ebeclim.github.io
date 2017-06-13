@@ -1,0 +1,389 @@
+[
+
+
+
+
+{
+"title": "A propos de ce site",
+"tags": "indexsommaire",
+"keywords": "ebe, environnement, bâtiment, énergie, polytech",
+"url": "about.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Diagramme de l&#39;air humide",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "airhumide_dah.html",
+"summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
+}
+,
+
+
+
+{
+"title": "Air humide",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "airhumide_intro.html",
+"summary": "Le diagramme de l'air humide, les mélanges et les transformations de l'air dans les CTA"
+}
+,
+
+
+
+{
+"title": "Transformations et CTA",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité, cta",
+"url": "airhumide_transformations.html",
+"summary": "Comment représenter les transformations, de chauffage, refroidissement et humidification sur le diagramme psychrométrique, et calculer leurs puissances"
+}
+,
+
+
+
+{
+"title": "A propos de ce site",
+"tags": "indexsommaire",
+"keywords": "ebe, environnement, bâtiment, énergie, polytech",
+"url": "apropos.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Lesson 1",
+"tags": "régulation",
+"keywords": "bâtiment, énergie, régulation",
+"url": "control_1.html",
+"summary": "Leçon 1 de régulation"
+}
+,
+
+
+
+{
+"title": "Lesson 2",
+"tags": "régulation",
+"keywords": "bâtiment, énergie, régulation",
+"url": "control_2.html",
+"summary": "Leçon 2 de régulation"
+}
+,
+
+
+
+{
+"title": "Control systems",
+"tags": "régulation",
+"keywords": "bâtiment, énergie, régulation",
+"url": "control_intro.html",
+"summary": "Méthodes pour faire suivre automatiquement une consigne à un équipement"
+}
+,
+
+
+
+{
+"title": "Leçon 1",
+"tags": "cvc",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "cvc_1.html",
+"summary": "Première leçon CVC"
+}
+,
+
+
+
+{
+"title": "Leçon 2",
+"tags": "cvc",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "cvc_2.html",
+"summary": "Deuxième leçon CVC"
+}
+,
+
+
+
+{
+"title": "Systèmes CVC",
+"tags": "cvc",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "cvc_intro.html",
+"summary": "Installations et systèmes pour le chauffage, la ventilation et la climatisation"
+}
+,
+
+
+
+
+
+{
+"title": "Air flow",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, ventilation",
+"url": "heat_airflow.html",
+"summary": "Faire un bilan de pression pour estimer les débits d'air entre les zones thermique"
+}
+,
+
+
+
+{
+"title": "Electronic analogy",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, analogie, électrique",
+"url": "heat_analogy.html",
+"summary": "Calculer les transferts thermiques comme des courants électriques"
+}
+,
+
+
+
+{
+"title": "Thermal inertia",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, inertie",
+"url": "heat_inertia.html",
+"summary": "En régime permanent, comment estimer le temps de réponse d'un bâtiment"
+}
+,
+
+
+
+{
+"title": "Heat transfer",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie",
+"url": "heat_intro.html",
+"summary": "Les bilans de chaleur et les calculs de la réglementation thermique"
+}
+,
+
+
+
+{
+"title": "Thermal radiation",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, rayonnement",
+"url": "heat_radiation.html",
+"summary": "Comment inclure le soleil et les échanges radiatifs dans les calculs"
+}
+,
+
+
+
+{
+"title": "Lesson 1",
+"tags": "cvc",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "hvac_1.html",
+"summary": "Première leçon CVC"
+}
+,
+
+
+
+{
+"title": "Lesson 2",
+"tags": "cvc",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "hvac_2.html",
+"summary": "Deuxième leçon CVC"
+}
+,
+
+
+
+{
+"title": "HVAC systems",
+"tags": "cvc",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "hvac_intro.html",
+"summary": "Installations et systèmes pour le chauffage, la ventilation et la climatisation"
+}
+,
+
+
+
+{
+"title": "Air handling units",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "hygrometry_ahu.html",
+"summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
+}
+,
+
+
+
+{
+"title": "The psychrometric chart",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "hygrometry_chart.html",
+"summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
+}
+,
+
+
+
+{
+"title": "Hygrometry",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "hygrometry_intro.html",
+"summary": "Le diagramme de l'air humide, les mélanges et les transformations de l'air dans les CTA"
+}
+,
+
+
+
+{
+"title": "Environnement Bâtiment Energie",
+"tags": "indexsommaire",
+"keywords": "ebe, environnement, bâtiment, énergie, polytech",
+"url": "index.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Building Energy",
+"tags": "indexsommaire",
+"keywords": "ebe, environnement, bâtiment, énergie, polytech",
+"url": "index_en.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "Navtabs",
+"tags": "formatting",
+"keywords": "navigation tabs, hide sections, tabbers, interface tabs",
+"url": "mydoc_navtabs.html",
+"summary": "Navtabs provide a tab-based navagation directly in your content, allowing users to click from tab to tab to see different panels of content. Navtabs are especially helpful for showing code samples for different programming languages. The only downside to using navtabs is that you must use HTML instead of Markdown."
+}
+,
+
+
+
+
+
+{
+"title": "Leçon 1",
+"tags": "régulation",
+"keywords": "bâtiment, énergie, régulation",
+"url": "regulation_1.html",
+"summary": "Leçon 1 de régulation"
+}
+,
+
+
+
+{
+"title": "Leçon 2",
+"tags": "régulation",
+"keywords": "bâtiment, énergie, régulation",
+"url": "regulation_2.html",
+"summary": "Leçon 2 de régulation"
+}
+,
+
+
+
+{
+"title": "Régulation",
+"tags": "régulation",
+"keywords": "bâtiment, énergie, régulation",
+"url": "regulation_intro.html",
+"summary": "Méthodes pour faire suivre automatiquement une consigne à un équipement"
+}
+,
+
+
+
+
+
+
+
+
+
+{
+"title": "Analogie électrique",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, analogie, électrique",
+"url": "thermique_analogie.html",
+"summary": "Calculer les transferts thermiques comme des courants électriques"
+}
+,
+
+
+
+{
+"title": "Inertie thermique",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, inertie",
+"url": "thermique_inertie.html",
+"summary": "En régime permanent, comment estimer le temps de réponse d'un bâtiment"
+}
+,
+
+
+
+{
+"title": "Thermique du bâtiment",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie",
+"url": "thermique_intro.html",
+"summary": "Les bilans de chaleur et les calculs de la réglementation thermique"
+}
+,
+
+
+
+{
+"title": "Rayonnement",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, rayonnement",
+"url": "thermique_rayonnement.html",
+"summary": "Comment inclure le soleil et les échanges radiatifs dans les calculs"
+}
+,
+
+
+
+{
+"title": "Ventilation",
+"tags": "thermique",
+"keywords": "thermique, bâtiment, énergie, ventilation",
+"url": "thermique_ventilation.html",
+"summary": "Faire un bilan de pression pour estimer les débits d'air entre les zones thermique"
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

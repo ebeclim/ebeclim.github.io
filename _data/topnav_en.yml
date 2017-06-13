@@ -1,0 +1,30 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav_en
+  items:
+    - title: Home
+      url: /index_en.html
+    - title: Français
+      url: /index.html
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Topics
+      folderitems:
+        - title: Heat transfer
+          url: /heat_intro.html
+        - title: Hygrometry
+          url: /hygrometry_intro.html
+        - title: HVAC systems
+          url: /hvac_intro.html
+        - title: Control systems
+          url: /control_intro.html
+    - title: Liens
+      folderitems:
+        - title: Polytech Annecy-Chambéry
+          external_url: http://www.polytech.univ-smb.fr/
+        - title: Université Savoie Mont-Blanc
+          external_url: https://www.univ-smb.fr/

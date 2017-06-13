@@ -1,0 +1,76 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Menu
+  version:
+  folders:
+
+  - title: Home
+    output: web, pdf
+    folderitems:
+
+    - title: Homepage
+      url: /index_en.html
+      output: web, pdf
+      type: homepage
+
+    - title: About
+      url: /about.html
+      output: web, pdf
+
+  - title: Heat transfer
+    output: web, pdf
+    folderitems:
+
+    - title: Electronic analogy
+      url: /heat_analogy.html
+      output: web, pdf
+
+    - title: Thermal inertia
+      url: /heat_inertia.html
+      output: web, pdf
+
+    - title: Thermal radiation
+      url: /heat_radiation.html
+      output: web, pdf
+
+    - title: Air flow
+      url: /heat_airflow.html
+      output: web, pdf
+
+  - title: Hygrometry
+    output: web, pdf
+    folderitems:
+
+    - title: The psychrometric chart
+      url: /hygrometry_chart.html
+      output: web, pdf
+
+    - title: Air handling units
+      url: /hygrometry_ahu.html
+      output: web, pdf
+
+  - title: HVAC systems
+    output: web, pdf
+    folderitems:
+
+    - title: CVC lesson 1
+      url: /hvac_1.html
+      output: web, pdf
+
+    - title: CVC lesson 2
+      url: /hvac_2.html
+      output: web, pdf
+
+  - title: Control systems
+    output: web, pdf
+    folderitems:
+
+    - title: Control 1
+      url: /control_1.html
+      output: web, pdf
+
+    - title: Control 2
+      url: /control_2.html
+      output: web, pdf
