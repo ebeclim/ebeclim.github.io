@@ -4,9 +4,9 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
-    - title: News
-      url: /news
+      external_url: https://github.com/ebeclim/ebeclim.github.io
+    - title: English
+      url: /english
 
 #Topnav dropdowns
 topnav_dropdowns:
@@ -24,7 +24,7 @@ topnav_dropdowns:
           external_url: http://idratherbewriting.com/category-jekyll/
     - title: Products
       folderitems:
-        - title: Jekyll Documentation Theme
+        - title: Jekyll Doc Theme
           url: /mydoc_introduction.html
         - title: Product 1
           url: /p1_landing_page.html
