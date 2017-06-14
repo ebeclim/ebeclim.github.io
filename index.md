@@ -11,7 +11,9 @@ toc: false
 
 Bienvenue sur la page d'accueil du site EBE clim.
 
-Ce site est d'abord conçu comme un support de révision pour les étudiants de la formation Environnement Bâtiment Energie (EBE) de l'école [Polytech Annecy-Chambéry](http://www.polytech.univ-smb.fr/), concernant les modules liés à l'efficacité énergétique des bâtiments. Le contenu du site peut bien sûr servir à n'importe qui, comme introduction ou pour compléter des connaissances sur les thèmes de la thermique des bâtiments, le fonctionnement et la régulation des systèmes de chauffage, ventilation et refroidissement.
+Ce site est un complément de révision pour les étudiants de la formation Environnement Bâtiment Energie (EBE) de l'école [Polytech Annecy-Chambéry](http://www.polytech.univ-smb.fr/), sur les modules liés à l'efficacité énergétique des bâtiments. Le contenu du site peut aussi servir à n'importe qui, comme introduction ou pour compléter des connaissances sur les thèmes de la thermique des bâtiments, le fonctionnement et la régulation des systèmes de chauffage, ventilation et refroidissement.
+
+Le site est composé des quatre modules ci-dessous, qui contiennent chacun plusieurs leçons. Chaque leçon peut contenir une ou plusieurs vidéos, un formulaire, des exercices, etc.
 
 <div class="row">
 
@@ -76,7 +78,5 @@ Ce site est d'abord conçu comme un support de révision pour les étudiants de 
              </div>
          </div>
 </div>
-
-Le site est composé des quatre modules ci-dessus, qui contiennent chacun plusieurs leçons. Chaque leçon peut contenir une ou plusieurs vidéos, un formulaire, des exercices, etc.
 
 Pour en savoir plus sur ce site et son auteur, vous pouvez aller sur [cette page](/apropos.html).

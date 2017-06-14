@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Calculer les transferts thermiques comme des courants électriques">
+<meta name="description" content="Représenter les transferts thermiques comme des courants électriques pour pouvoir faire des calculs simples">
 <meta name="keywords" content="thermique,  thermique, bâtiment, énergie, analogie, électrique">
 <title>Analogie électrique | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -372,7 +372,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Calculer les transferts thermiques comme des courants électriques</div>
+    <div class="summary">Représenter les transferts thermiques comme des courants électriques pour pouvoir faire des calculs simples</div>
    
 
     
@@ -405,13 +405,13 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="vidos">Vidéos</h2>
 
-<h3 id="vido-1">Vidéo 1</h3>
+<h3 id="vido-1--reprsentation-dune-paroi">Vidéo 1 : représentation d’une paroi</h3>
 
 <p>Introduction au principe de l’analogie électrique et de la mise en parallèle et en série des composants du bâtiment.</p>
 
 <iframe src="https://player.vimeo.com/video/141894652?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<h3 id="vido-2">Vidéo 2</h3>
+<h3 id="vido-2-reprsentation-dun-btiment">Vidéo 2: représentation d’un bâtiment</h3>
 
 <p>On peut utiliser l’analogie électrique à l’échelle d’un bâtiment pour représenter les transferts par conduction, convection et rayonnement.</p>
 
@@ -419,40 +419,66 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="formulaire">Formulaire</h2>
 
+<p>La chaleur traversant une unité de surface de mur est proportionnelle à l’écart de température de part et d’autre du mur <script type="math/tex">\Delta T</script>, et à son coefficient de transfert <script type="math/tex">U</script> [W/(m<script type="math/tex">^2</script>.K)]:</p>
+
+<script type="math/tex; mode=display">\varphi = U . \Delta T = \dfrac{1}{R}</script>
+
+<p>Cette chaleur surfacique <script type="math/tex">\varphi</script> a pour dimension [W/m<script type="math/tex">^2</script>]. La chaleur totale <script type="math/tex">\phi</script> perdue à travers un mur de surface <script type="math/tex">S</script>, en [W], vaut donc:</p>
+
+<script type="math/tex; mode=display">\phi = S . \varphi = S . U . \Delta T</script>
+
+<p>On peut définir un coefficient de déperdition totale comme <script type="math/tex">D = S.U</script> [W/K]</p>
+
+<p>La résistance thermique <script type="math/tex">R_i</script> d’un composant d’épaisseur <script type="math/tex">e_i</script> et de conductivité thermique <script type="math/tex">\lambda_i</script> vaut :</p>
+
+<script type="math/tex; mode=display">R_i=\dfrac{e_i}{\lambda_i}</script>
+
+<p>Un mur à plusieurs couches se comporte comme plusieurs résistances placées en série : leurs résistances s’additionnent:</p>
+
+<script type="math/tex; mode=display">R = \sum_i R_i = \sum_i \dfrac{e_i}{\lambda_i}</script>
+
+<p>Un mur composé de plusieurs surfaces (mur bas, vitres…) se comporte comme plusieurs résistances en parallèle: la chaleur traverse chaque surface <script type="math/tex">S_i</script> (m<script type="math/tex">^2</script>) en même temps avec plus ou moins de facilité. Les coefficients de déperdition <script type="math/tex">D</script> de chaque surface s’additionnent:</p>
+
+<script type="math/tex; mode=display">D = S.U = \sum_i S_i.U_i</script>
+
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Pour additionner des coefficients de déperdition, il faut les pondérer par leur surface: on additionne des [W], pas des [W/m<script type="math/tex">^2</script>]</div>
+
 <table>
   <thead>
     <tr>
-      <th>Priority apples</th>
-      <th>Second priority</th>
-      <th>Third priority</th>
+      <th> </th>
+      <th> Variable</th>
+      <th>Dimension</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ambrosia</td>
-      <td>gala</td>
-      <td>red delicious</td>
+      <td><script type="math/tex">R</script></td>
+      <td>Résistance</td>
+      <td>(m<script type="math/tex">^2</script>.K)/W</td>
+      <td>s’additionne en série</td>
     </tr>
     <tr>
-      <td>pink lady</td>
-      <td>jazz</td>
-      <td>macintosh</td>
+      <td><script type="math/tex">U</script></td>
+      <td>Coefficient de transfert surfacique</td>
+      <td>W/(m<script type="math/tex">^2</script>.K)</td>
+      <td> </td>
     </tr>
     <tr>
-      <td>honeycrisp</td>
-      <td>granny smith</td>
-      <td>fuji</td>
+      <td><script type="math/tex">D</script></td>
+      <td>Coefficient de déperdition</td>
+      <td>W/K</td>
+      <td>s’additionne en parallèle</td>
     </tr>
   </tbody>
 </table>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Ceci est une note. On peut y écrire des mots</div>
-
-<script type="math/tex; mode=display">m c_p \frac{\partial T}{\partial t} = \lambda \frac{\partial T}{\partial x}</script>
+<p>Cette méthode peut être appliquée pour représenter les transferts à l’échelle de tout un bâtiment, y compris en incluant des transferts par renouvellement d’air (voir vidéo 2).</p>
 
 <h2 id="exercice">Exercice</h2>
 
-<p>The following is a demo of a navtab. Refresh your page to see the tab you selected remain active.</p>
+<p>On veut calculer les déperditions thermiques d’un local isolé.</p>
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Enoncé</a></li>
@@ -462,25 +488,53 @@ $('#toc').on('click', 'a', function() {
 <div class="tab-content">
 
 <div role="tabpanel" class="tab-pane active" id="enonce">
-    <h3 id="enonc">Enoncé</h3>
 
-    <p>Praesent sit amet fermentum leo. Aliquam feugiat,</p>
+    <p>Les parois du local sont composées de :</p>
 
-    <ol>
-      <li>nibh in u ltrices mattis</li>
-      <li>felis ipsum venenatis metus, vel vehicula libero mauris a enim. Sed placerat est ac lectus vestibulum tempor.
-        <ul>
-          <li>Quisque ut condimentum massa.</li>
-          <li>ut condimentum massa.</li>
-        </ul>
-      </li>
-    </ol>
+    <ul>
+      <li>44 m<script type="math/tex">^2</script> de mur en béton (<script type="math/tex">e_b=15</script> cm, <script type="math/tex">\lambda_b=2,3</script> W/(m.K)) avec une couche d’isolant (<script type="math/tex">e_{iso}=10</script> cm, <script type="math/tex">\lambda_{iso}=0,04</script> W/(m.K))</li>
+      <li>8 m<script type="math/tex">^2</script> de double vitrage (<script type="math/tex">U_v=3,3</script> W/(m<script type="math/tex">^2</script>.K))</li>
+      <li>La résistance surfacique intérieure est <script type="math/tex">h_i = 0,11</script> (m<script type="math/tex">^2</script>.K)/W, et la résistance extérieure est <script type="math/tex">h_e = 0,07</script> (m<script type="math/tex">^2</script>.K)/W</li>
+    </ul>
+
+    <p>Le local a également un taux de renouvellement d’air depuis l’extérieur de 9 m<script type="math/tex">^3</script>/h.</p>
+
+    <p>Quelle puissance doit-on fournir pour maintenir le local à 19°C, si la température extérieure est de 2°C ?</p>
+
   </div>
 
 <div role="tabpanel" class="tab-pane" id="correction">
-    <h3 id="correction">Correction</h3>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Les déperditions thermiques totales du local sont la somme de trois parties : les pertes par le mur béton+isolant, les pertes par les vitres et les pertes par renouvellement d’air. Il suffit de calculer ces trois parties et de les additionner.</p>
+
+    <p><strong>1. Mur béton isolé</strong></p>
+
+    <p>La résistance thermique totale doit tenir compte des deux couches du mur et des résistances surfaciques</p>
+
+    <p><script type="math/tex">R_1 = h_i + \dfrac{e_b}{\lambda_b} + \dfrac{e_{iso}}{\lambda_{iso}} + h_e = 0,11 + \dfrac{0,15}{2,3} + \dfrac{0,10}{0,04} + 0,07 = 2,75</script> (m<script type="math/tex">^2</script>.K)/W</p>
+
+    <p>La déperdition <script type="math/tex">D_1</script> est ensuite l’inverse de cette résistance, multiplié par la surface de mur:</p>
+
+    <p><script type="math/tex">D_1 = \dfrac{S_1}{R_1} = \dfrac{44}{2,75} = 16,03</script> W/K</p>
+
+    <p><strong>2. Vitres</strong></p>
+
+    <p>Le coefficient <script type="math/tex">U_v</script> fourni pour le vitrage n’inclut probablement pas les résistances surfaciques. Il faut les ajouter à la résistance de ce composant pour obtenir le coefficient de déperdition total des vitres <script type="math/tex">D_2</script>:</p>
+
+    <p><script type="math/tex">D_2 = \dfrac{S_2}{h_i+\frac{1}{U_v}+h_e} = \dfrac{8}{0.11+\frac{1}{3,3}+0,07} = 16,56</script> W/K</p>
+
+    <p><strong>3. Renouvellement d’air</strong></p>
+
+    <p>Si le débit d’air est donné en (m<script type="math/tex">^3</script>/h), le coefficient de déperdition qui y est associé se calcule facilement:</p>
+
+    <p><script type="math/tex">D_3 = 0,34 \, Q_v = 3,06</script> W/K</p>
+
+    <p><strong>Total</strong></p>
+
+    <p>La puissance totale <script type="math/tex">\phi</script> perdue par le local est la somme des trois composantes de déperditions, multipliée par l’écart de température intérieur-extérieur:</p>
+
+    <p><script type="math/tex">\phi = \underbrace{(D_1+D_2+D_3)}_{W/(m^2.K)}.\underbrace{\Delta T}_{K} = (16,03 + 16,56 + 3,06 ). (19-2) = 606</script> W</p>
+
   </div>
 
 </div>
@@ -509,7 +563,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Jun 13, 2017 <br />
+ Site last generated: Jun 14, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

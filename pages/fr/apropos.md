@@ -11,12 +11,12 @@ toc: false
 
 ## Quoi ?
 
-Le site EBE clim est d'abord conçu comme un support de révision pour les étudiants de la formation Environnement Bâtiment Energie (EBE) de l'école Polytech Annecy-Chambéry, concernant les modules liés à l'efficacité énergétique des bâtiments.
+Le site EBE clim est un complément de révision pour les étudiants de la formation Environnement Bâtiment Energie (EBE) de l'école Polytech Annecy-Chambéry, sur les modules liés à l'efficacité énergétique des bâtiments. Il n'est pas fait pour remplacer les cours et les travaux dirigés faits à l'école mais pour les compléter.
 
 * [Polytech Annecy-Chambéry](http://www.polytech.univ-smb.fr/)
 * [Université Savoie Mont-Blanc](https://www.univ-smb.fr/)
 
-Le contenu du site peut bien sûr servir à n'importe qui, comme introduction ou pour compléter des connaissances sur les thèmes de la thermique des bâtiments, le fonctionnement et la régulation des systèmes de chauffage, ventilation et refroidissement.
+Le contenu du site peut aussi servir à n'importe qui, comme introduction ou pour compléter des connaissances sur les thèmes de la thermique des bâtiments, le fonctionnement et la régulation des systèmes de chauffage, ventilation et refroidissement.
 
 ## Qui ?
 
