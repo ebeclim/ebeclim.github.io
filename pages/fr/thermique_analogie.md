@@ -112,7 +112,7 @@ $$D_3 = 0,34 \, Q_v = 3,06$$ W/K
 
 La puissance totale $$\phi$$ perdue par le local est la somme des trois composantes de déperditions, multipliée par l'écart de température intérieur-extérieur:
 
-$$\phi = \underbrace{(D_1+D_2+D_3)}_{W/(m^2.K)}.\underbrace{\Delta T}_{K} = (16,03 + 16,56 + 3,06 ). (19-2) = 606$$ W
+$$\phi = \underbrace{(D_1+D_2+D_3)}_{W/K}.\underbrace{\Delta T}_{K} = (16,03 + 16,56 + 3,06 ). (19-2) = 606$$ W
 
 </div>
 
