@@ -9,9 +9,9 @@ topnav: topnav_fr
 folder: fr
 ---
 
-## Vidéos
+## Vidéo
 
-Mettre ici les vidéos sur la Ventilation
+<iframe src="https://player.vimeo.com/video/142891349?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Formulaire
 

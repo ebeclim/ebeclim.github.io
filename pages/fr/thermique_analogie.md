@@ -15,19 +15,19 @@ folder: fr
 
 Introduction au principe de l'analogie électrique et de la mise en parallèle et en série des composants du bâtiment.
 
-<iframe src="https://player.vimeo.com/video/141894652?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/141894652?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Vidéo 2: représentation d'un bâtiment
 
 On peut utiliser l'analogie électrique à l'échelle d'un bâtiment pour représenter les transferts par conduction, convection et rayonnement.
 
-<iframe src="https://player.vimeo.com/video/142221212?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/142221212?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Formulaire
 
 La chaleur traversant une unité de surface de mur est proportionnelle à l'écart de température de part et d'autre du mur $$\Delta T$$, et à son coefficient de transfert $$U$$ [W/(m$$^2$$.K)]:
 
-$$ \varphi = U . \Delta T = \dfrac{1}{R}$$
+$$ \varphi = U . \Delta T = \dfrac{1}{R} . \Delta T$$
 
 Cette chaleur surfacique $$\varphi$$ a pour dimension [W/m$$^2$$]. La chaleur totale $$\phi$$ perdue à travers un mur de surface $$S$$, en [W], vaut donc:
 

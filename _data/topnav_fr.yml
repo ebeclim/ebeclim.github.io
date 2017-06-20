@@ -22,9 +22,3 @@ topnav_dropdowns:
           url: /cvc_intro.html
         - title: Régulation
           url: /regulation_intro.html
-    - title: Liens
-      folderitems:
-        - title: Polytech Annecy-Chambéry
-          external_url: http://www.polytech.univ-smb.fr/
-        - title: Université Savoie Mont-Blanc
-          external_url: https://www.univ-smb.fr/

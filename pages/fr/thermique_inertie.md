@@ -1,6 +1,6 @@
 ---
 title: Inertie thermique
-summary: "En régime permanent, comment estimer le temps de réponse d'un bâtiment"
+summary: "En régime non permanent, comment estimer le temps de réponse d'un bâtiment"
 permalink: thermique_inertie.html
 keywords: thermique, bâtiment, énergie, inertie
 tags: [thermique]
@@ -9,13 +9,14 @@ topnav: topnav_fr
 folder: fr
 ---
 
-## Vidéos
+## Vidéo
 
-Section vidéos
+<iframe src="https://player.vimeo.com/video/142244633?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Formulaire
 
-Section formulaire
+Adjust the frequency, and see the plot update:
+
 
 ## Exercices
 
