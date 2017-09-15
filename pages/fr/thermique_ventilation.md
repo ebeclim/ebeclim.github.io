@@ -11,6 +11,8 @@ folder: fr
 
 ## Vidéo
 
+Comment prédire les écoulements d’air sous l’effet du vent et des différences de température. [Diapos au format PDF](/pdf/thermique6 - aéraulique.pdf)
+
 <iframe src="https://player.vimeo.com/video/142891349?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Formulaire

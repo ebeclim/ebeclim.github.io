@@ -13,23 +13,23 @@ folder: fr
 
 ### Vidéo 1 : représentation d'une paroi
 
-Introduction au principe de l'analogie électrique et de la mise en parallèle et en série des composants du bâtiment.
+Introduction au principe de l'analogie électrique et de la mise en parallèle et en série des composants du bâtiment. [Diapos au format PDF](/pdf/thermique1 - analogie électrique.pdf)
 
 <iframe src="https://player.vimeo.com/video/141894652?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Vidéo 2: représentation d'un bâtiment
 
-On peut utiliser l'analogie électrique à l'échelle d'un bâtiment pour représenter les transferts par conduction, convection et rayonnement.
+On peut utiliser l'analogie électrique à l'échelle d'un bâtiment pour représenter les transferts par conduction, convection et rayonnement. [Diapos au format PDF](/pdf/thermique2 - analogie électrique.pdf)
 
 <iframe src="https://player.vimeo.com/video/142221212?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Formulaire
 
-La chaleur traversant une unité de surface de mur est proportionnelle à l'écart de température de part et d'autre du mur $$\Delta T$$, et à son coefficient de transfert $$U$$ [W/(m$$^2$$.K)]:
+La chaleur traversant une unité de surface de mur est proportionnelle à l'écart de température de part et d'autre du mur $$\Delta T$$, et à son coefficient de transfert $$U$$ [W/(m$$^2$$.K)] :
 
 $$ \varphi = U . \Delta T = \dfrac{1}{R} . \Delta T$$
 
-Cette chaleur surfacique $$\varphi$$ a pour dimension [W/m$$^2$$]. La chaleur totale $$\phi$$ perdue à travers un mur de surface $$S$$, en [W], vaut donc:
+Cette chaleur surfacique $$\varphi$$ a pour dimension [W/m$$^2$$]. La chaleur totale $$\phi$$ perdue à travers un mur de surface $$S$$, en [W], vaut donc :
 
 $$ \phi = S . \varphi = S . U . \Delta T$$
 
@@ -39,11 +39,11 @@ La résistance thermique $$R_i$$ d'un composant d'épaisseur $$e_i$$ et de condu
 
 $$R_i=\dfrac{e_i}{\lambda_i}$$
 
-Un mur à plusieurs couches se comporte comme plusieurs résistances placées en série : leurs résistances s'additionnent:
+Un mur à plusieurs couches se comporte comme plusieurs résistances placées en série : leurs résistances s'additionnent :
 
 $$ R = \sum_i R_i = \sum_i \dfrac{e_i}{\lambda_i}$$
 
-Un mur composé de plusieurs surfaces (mur bas, vitres...) se comporte comme plusieurs résistances en parallèle: la chaleur traverse chaque surface $$S_i$$ (m$$^2$$) en même temps avec plus ou moins de facilité. Les coefficients de déperdition $$D$$ de chaque surface s'additionnent:
+Un mur composé de plusieurs surfaces (mur bas, vitres...) se comporte comme plusieurs résistances en parallèle: la chaleur traverse chaque surface $$S_i$$ (m$$^2$$) en même temps avec plus ou moins de facilité. Les coefficients de déperdition $$D$$ de chaque surface s'additionnent :
 
 $$ D = S.U = \sum_i S_i.U_i $$
 

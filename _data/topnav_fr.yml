@@ -9,16 +9,16 @@ topnav:
       url: /index_en.html
 
 #Topnav dropdowns
-topnav_dropdowns:
-- title: Topnav dropdowns
-  folders:
-    - title: Modules
-      folderitems:
-        - title: Thermique
-          url: /thermique_intro.html
-        - title: Air humide
-          url: /airhumide_intro.html
-        - title: Systèmes CVC
-          url: /cvc_intro.html
-        - title: Régulation
-          url: /regulation_intro.html
+# topnav_dropdowns:
+# - title: Topnav dropdowns
+#   folders:
+#     - title: Modules
+#       folderitems:
+#         - title: Thermique
+#           url: /thermique_intro.html
+#         - title: Air humide
+#           url: /airhumide_intro.html
+#         - title: Systèmes CVC
+#           url: /cvc_intro.html
+#         - title: Régulation
+#           url: /regulation_intro.html

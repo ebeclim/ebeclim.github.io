@@ -134,46 +134,6 @@
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
                 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="thermique_intro.html">Thermique</a></li>
-                        
-                        
-                        
-                        <li><a href="airhumide_intro.html">Air humide</a></li>
-                        
-                        
-                        
-                        <li><a href="cvc_intro.html">Systèmes CVC</a></li>
-                        
-                        
-                        
-                        <li><a href="regulation_intro.html">Régulation</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="http://www.polytech.univ-smb.fr/" target="_blank">Polytech Annecy-Chambéry</a></li>
-                        
-                        
-                        
-                        <li><a href="https://www.univ-smb.fr/" target="_blank">Université Savoie Mont-Blanc</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                
-                
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->
@@ -407,23 +367,23 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="vido-1--reprsentation-dune-paroi">Vidéo 1 : représentation d’une paroi</h3>
 
-<p>Introduction au principe de l’analogie électrique et de la mise en parallèle et en série des composants du bâtiment.</p>
+<p>Introduction au principe de l’analogie électrique et de la mise en parallèle et en série des composants du bâtiment. <a href="/pdf/thermique1 - analogie électrique.pdf">Diapos au format PDF</a></p>
 
 <iframe src="https://player.vimeo.com/video/141894652?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 <h3 id="vido-2-reprsentation-dun-btiment">Vidéo 2: représentation d’un bâtiment</h3>
 
-<p>On peut utiliser l’analogie électrique à l’échelle d’un bâtiment pour représenter les transferts par conduction, convection et rayonnement.</p>
+<p>On peut utiliser l’analogie électrique à l’échelle d’un bâtiment pour représenter les transferts par conduction, convection et rayonnement. <a href="/pdf/thermique2 - analogie électrique.pdf">Diapos au format PDF</a></p>
 
 <iframe src="https://player.vimeo.com/video/142221212?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 <h2 id="formulaire">Formulaire</h2>
 
-<p>La chaleur traversant une unité de surface de mur est proportionnelle à l’écart de température de part et d’autre du mur <script type="math/tex">\Delta T</script>, et à son coefficient de transfert <script type="math/tex">U</script> [W/(m<script type="math/tex">^2</script>.K)]:</p>
+<p>La chaleur traversant une unité de surface de mur est proportionnelle à l’écart de température de part et d’autre du mur <script type="math/tex">\Delta T</script>, et à son coefficient de transfert <script type="math/tex">U</script> [W/(m<script type="math/tex">^2</script>.K)] :</p>
 
-<script type="math/tex; mode=display">\varphi = U . \Delta T = \dfrac{1}{R}</script>
+<script type="math/tex; mode=display">\varphi = U . \Delta T = \dfrac{1}{R} . \Delta T</script>
 
-<p>Cette chaleur surfacique <script type="math/tex">\varphi</script> a pour dimension [W/m<script type="math/tex">^2</script>]. La chaleur totale <script type="math/tex">\phi</script> perdue à travers un mur de surface <script type="math/tex">S</script>, en [W], vaut donc:</p>
+<p>Cette chaleur surfacique <script type="math/tex">\varphi</script> a pour dimension [W/m<script type="math/tex">^2</script>]. La chaleur totale <script type="math/tex">\phi</script> perdue à travers un mur de surface <script type="math/tex">S</script>, en [W], vaut donc :</p>
 
 <script type="math/tex; mode=display">\phi = S . \varphi = S . U . \Delta T</script>
 
@@ -433,11 +393,11 @@ $('#toc').on('click', 'a', function() {
 
 <script type="math/tex; mode=display">R_i=\dfrac{e_i}{\lambda_i}</script>
 
-<p>Un mur à plusieurs couches se comporte comme plusieurs résistances placées en série : leurs résistances s’additionnent:</p>
+<p>Un mur à plusieurs couches se comporte comme plusieurs résistances placées en série : leurs résistances s’additionnent :</p>
 
 <script type="math/tex; mode=display">R = \sum_i R_i = \sum_i \dfrac{e_i}{\lambda_i}</script>
 
-<p>Un mur composé de plusieurs surfaces (mur bas, vitres…) se comporte comme plusieurs résistances en parallèle: la chaleur traverse chaque surface <script type="math/tex">S_i</script> (m<script type="math/tex">^2</script>) en même temps avec plus ou moins de facilité. Les coefficients de déperdition <script type="math/tex">D</script> de chaque surface s’additionnent:</p>
+<p>Un mur composé de plusieurs surfaces (mur bas, vitres…) se comporte comme plusieurs résistances en parallèle: la chaleur traverse chaque surface <script type="math/tex">S_i</script> (m<script type="math/tex">^2</script>) en même temps avec plus ou moins de facilité. Les coefficients de déperdition <script type="math/tex">D</script> de chaque surface s’additionnent :</p>
 
 <script type="math/tex; mode=display">D = S.U = \sum_i S_i.U_i</script>
 
@@ -563,7 +523,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Jun 15, 2017 <br />
+ Site last generated: Sep 15, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

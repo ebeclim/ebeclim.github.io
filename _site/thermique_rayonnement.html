@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Comment inclure le soleil et les échanges radiatifs dans les calculs">
+<meta name="description" content="Comment inclure le soleil et les échanges radiatifs dans les calculs thermiques">
 <meta name="keywords" content="thermique,  thermique, bâtiment, énergie, rayonnement">
 <title>Rayonnement | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -132,46 +132,6 @@
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-                
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="thermique_intro.html">Thermique</a></li>
-                        
-                        
-                        
-                        <li><a href="airhumide_intro.html">Air humide</a></li>
-                        
-                        
-                        
-                        <li><a href="cvc_intro.html">Systèmes CVC</a></li>
-                        
-                        
-                        
-                        <li><a href="regulation_intro.html">Régulation</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Liens<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="http://www.polytech.univ-smb.fr/" target="_blank">Polytech Annecy-Chambéry</a></li>
-                        
-                        
-                        
-                        <li><a href="https://www.univ-smb.fr/" target="_blank">Université Savoie Mont-Blanc</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
                 
                 
                 <!--comment out this block if you want to hide search-->
@@ -372,7 +332,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Comment inclure le soleil et les échanges radiatifs dans les calculs</div>
+    <div class="summary">Comment inclure le soleil et les échanges radiatifs dans les calculs thermiques</div>
    
 
     
@@ -403,19 +363,70 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="vidos">Vidéos</h2>
+  <h2 id="apports-solaires-courtes-longueurs-donde">Apports solaires (courtes longueurs d’onde)</h2>
+
+<p>Première vidéo sur le rayonnement : comment calculer les apports solaires directs et diffus sur une paroi à partir des données météo. <a href="/pdf/thermique4 - rayonnement CLO.pdf">Diapos au format PDF</a></p>
 
 <iframe src="https://player.vimeo.com/video/142485394?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
+<p>La chaleur totale <script type="math/tex">\Phi</script> que le soleil apporte à une surface <script type="math/tex">S</script> d’absorptivité <script type="math/tex">\alpha</script> est la somme de l’ensoleillement direct <script type="math/tex">E_{dir}</script>, diffus <script type="math/tex">E_{dif}</script> et réfléchi sur les surfaces voisines <script type="math/tex">E_{ref}</script>. Chacun de ces termes se calcule avec un peu de trigonométrie en fonction de l’angle de la paroi et la position du soleil.</p>
+
+<script type="math/tex; mode=display">\Phi_{CLO} = \alpha . S . (E_{dir}+E_{dir}+E_{ref})</script>
+
+<p><script type="math/tex">\Phi</script> est exprimée ici en W et non en W/m<script type="math/tex">^2</script>, puisqu’on a multiplié la somme des ensoleillements par la surface <script type="math/tex">S</script>.</p>
+
+<h2 id="echanges-radiatifs-entre-parois-grandes-longueurs-donde">Echanges radiatifs entre parois (grandes longueurs d’onde)</h2>
+
+<p>Deuxième vidéo sur le rayonnement, où on aborde le calcul des températures des parois sous l’effet des échanges radiatifs, et la description de la température radiante moyenne. <a href="/pdf/thermique5 - rayonnement GLO.pdf">Diapos au format PDF</a></p>
+
 <iframe src="https://player.vimeo.com/video/142616863?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<h2 id="formulaire">Formulaire</h2>
+<p>Pour résoudre un problème d’échange radiatif (grandes longueurs d’onde) entre parois, il faut d’abord connaître tous les facteurs de forme <script type="math/tex">F_{ij}</script></p>
 
-<p>Section formulaire</p>
+<table>
+<tr>
+<th> <img src="images/thermique GLO1.png" style="width: 450px;" /> </th>
+<th style="font-weight: normal">
+On peut ensuite établir un schéma électrique équivalent à l'ensemble des échanges, où les noeuds sont des émissivités ou des radiosités. Le système peut être résolu si chaque paroi a soit une température connue, soit un flux net de chaleur connu (par exemple une paroi adiabatique). Selon le cas, on peut alors exprimer le flux net de chaque paroi par l'une ou l'autre de ces formules :
+<br />
+<img src="images/thermique GLO2.png" style="width: 200px;" />
 
-<h2 id="exercices">Exercices</h2>
+</th>
+</tr>
+</table>
 
-<p>Section exercices</p>
+<h2 id="exercice">Exercice</h2>
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Enoncé</a></li>
+    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Correction</a></li>
+</ul>
+
+<div class="tab-content">
+
+<div role="tabpanel" class="tab-pane active" id="enonce">
+
+    <p>On considère une pièce parallélépipédique aux dimensions suivantes :</p>
+
+    <p><img src="images/thermique rayonnement exo.png" style="width: 250px;" /></p>
+
+    <ul>
+      <li>La surface <script type="math/tex">S_5</script> (mur vertical gauche) est une baie vitrée à la température <script type="math/tex">T_5 = 8°C</script>.</li>
+      <li>La surface <script type="math/tex">S_0</script> est un radiateur couvrant la moitié de la hauteur du mur de droite, à la température <script type="math/tex">T_0 = 60°C</script>.</li>
+      <li>Toutes les autres parois sont à la température <script type="math/tex">T_0 = 20°C</script>.</li>
+    </ul>
+
+    <p>Calculer les pertes radiatives de la pièce par la fenêtre, et le flux net radiatif cédé par le radiateur.</p>
+
+  </div>
+
+<div role="tabpanel" class="tab-pane" id="correction">
+
+    <p>Correction à venir.</p>
+
+  </div>
+
+</div>
 
 
     <div class="tags">
@@ -441,7 +452,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Jun 15, 2017 <br />
+ Site last generated: Sep 15, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>
