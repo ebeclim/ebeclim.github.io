@@ -140,9 +140,9 @@
 {
 "title": "Electronic analogy",
 "tags": "thermique",
-"keywords": "thermique, bâtiment, énergie, analogie, électrique",
+"keywords": "heat, transfer, electronic, analogy",
 "url": "heat_analogy.html",
-"summary": "Calculer les transferts thermiques comme des courants électriques"
+"summary": "Calculating heat transfer as if it were electric current"
 }
 ,
 
@@ -164,7 +164,7 @@
 "tags": "thermique",
 "keywords": "thermique, bâtiment, énergie",
 "url": "heat_intro.html",
-"summary": "Les bilans de chaleur et les calculs de la réglementation thermique"
+"summary": "How to estimate heat loss coefficients of buildings due to either conductive, convective or radiative transfer"
 }
 ,
 
@@ -259,7 +259,7 @@
 
 
 {
-"title": "Building Energy",
+"title": "Environment Building Energy",
 "tags": "indexsommaire",
 "keywords": "ebe, environnement, bâtiment, énergie, polytech",
 "url": "index_en.html",
