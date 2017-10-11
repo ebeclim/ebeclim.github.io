@@ -47,6 +47,10 @@ entries:
       url: /airhumide_dah.html
       output: web, pdf
 
+    - title: Mélanges d'air humide
+      url: /airhumide_melanges.html
+      output: web, pdf
+
     - title: Transformations et CTA
       url: /airhumide_transformations.html
       output: web, pdf

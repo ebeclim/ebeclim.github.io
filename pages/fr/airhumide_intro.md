@@ -9,5 +9,6 @@ topnav: topnav_fr
 folder: fr
 ---
 
-* [Diagramme de l'air humide](/airhumide_dah.html) (2 vidéos)
+* [Diagramme de l'air humide](/airhumide_dah.html) (1 vidéo)
+* [Mélanges d'air humide](/airhumide_melanges.html) (1 vidéo)
 * [Transformations et CTA](/airhumide_transformations.html) (3 vidéos)

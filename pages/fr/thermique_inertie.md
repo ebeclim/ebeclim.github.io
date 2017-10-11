@@ -41,8 +41,6 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
 
 ## Exercices
 
-Exercice issu d'un poly de l'INSA Lyon.
-
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Enoncé</a></li>
     <li><a class="noCrossRef" href="#correction" data-toggle="tab">Correction</a></li>
@@ -54,7 +52,7 @@ Exercice issu d'un poly de l'INSA Lyon.
 
 On considère une paroi constituée de trois couches :
 
-| Couche 1 (béton) | Couche 2 (isolant) | Couche 3 (enduit) | 
+| Couche 1 (béton) | Couche 2 (isolant) | Couche 3 (enduit) |
 |-------|--------|---------|
 | $$e_b=15$$ cm | $$e_i=4$$ cm | $$e_e=1,5$$ cm |
 | $$\lambda_b=1,5$$ W/m.K | $$\lambda_i=0,04$$ W/m.K | $$\lambda_e=1,5$$ W/m.K |

@@ -19,7 +19,7 @@
 "tags": "humidité",
 "keywords": "bâtiment, énergie, humidité",
 "url": "airhumide_dah.html",
-"summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
+"summary": "Comment lire le diagramme de l'air humide et y relever les propriétés de l'air"
 }
 ,
 
@@ -31,6 +31,17 @@
 "keywords": "bâtiment, énergie, humidité",
 "url": "airhumide_intro.html",
 "summary": "Le diagramme de l'air humide, les mélanges et les transformations de l'air dans les CTA"
+}
+,
+
+
+
+{
+"title": "Mélanges d&#39;air humide",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "airhumide_melanges.html",
+"summary": "Comment calculer les propriétés de mélanges d'air humide"
 }
 ,
 
@@ -242,6 +253,17 @@
 "keywords": "bâtiment, énergie, humidité",
 "url": "hygrometry_intro.html",
 "summary": "Le diagramme de l'air humide, les mélanges et les transformations de l'air dans les CTA"
+}
+,
+
+
+
+{
+"title": "The psychrometric chart",
+"tags": "humidité",
+"keywords": "bâtiment, énergie, humidité",
+"url": "hygrometry_chart.html",
+"summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
 }
 ,
 

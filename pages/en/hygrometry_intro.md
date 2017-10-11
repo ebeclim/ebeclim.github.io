@@ -9,5 +9,6 @@ topnav: topnav_en
 folder: en
 ---
 
-* [The psychrometric chart](/hygrometry_chart.html) (2 videos)
+* [The psychrometric chart](/hygrometry_chart.html) (1 video)
+* [Mixing](/hygrometry_mixing.html) (1 video)
 * [Air handling units](/hygrometry_ahu.html) (3 videos)

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Leçon 1 de régulation">
-<meta name="keywords" content="régulation,  bâtiment, énergie, régulation">
-<title>Lesson 1 | EBE clim</title>
+<meta name="description" content="Comment calculer les propriétés de mélanges d'air humide">
+<meta name="keywords" content="humidité,  bâtiment, énergie, humidité">
+<title>Mélanges d'air humide | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -122,11 +122,11 @@
                 
                 
                 
-                <li><a href="index_en.html">Home</a></li>
+                <li><a href="index.html">Accueil</a></li>
                 
                 
                 
-                <li><a href="index.html">Français</a></li>
+                <li><a href="index_en.html">English</a></li>
                 
                 
                 
@@ -147,7 +147,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Lesson 1">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Mélanges d'air humide">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -179,19 +179,19 @@
   
   
   <li>
-      <a href="#">Home</a>
+      <a href="#">Accueil</a>
       <ul>
           
           
           
-          <li><a href="index_en.html">Homepage</a></li>
+          <li><a href="index.html">Page d'accueil</a></li>
           
           
           
           
           
           
-          <li><a href="about.html">About</a></li>
+          <li><a href="apropos.html">A propos de ce site</a></li>
           
           
           
@@ -202,33 +202,33 @@
       
   
   <li>
-      <a href="#">Heat transfer</a>
+      <a href="#">Thermique du bâtiment</a>
       <ul>
           
           
           
-          <li><a href="heat_analogy.html">Electronic analogy</a></li>
+          <li><a href="thermique_analogie.html">Analogie électrique</a></li>
           
           
           
           
           
           
-          <li><a href="heat_inertia.html">Thermal inertia</a></li>
+          <li><a href="thermique_inertie.html">Inertie thermique</a></li>
           
           
           
           
           
           
-          <li><a href="heat_radiation.html">Thermal radiation</a></li>
+          <li><a href="thermique_rayonnement.html">Rayonnement</a></li>
           
           
           
           
           
           
-          <li><a href="heat_airflow.html">Air flow</a></li>
+          <li><a href="thermique_ventilation.html">Ventilation</a></li>
           
           
           
@@ -239,26 +239,26 @@
       
   
   <li>
-      <a href="#">Hygrometry</a>
+      <a href="#">Air humide</a>
       <ul>
           
           
           
-          <li><a href="hygrometry_chart.html">The psychrometric chart</a></li>
+          <li><a href="airhumide_dah.html">Diagramme de l'air humide</a></li>
           
           
           
           
           
           
-          <li><a href="hygrometry_mixing.html">Mixing</a></li>
+          <li class="active"><a href="airhumide_melanges.html">Mélanges d'air humide</a></li>
           
           
           
           
           
           
-          <li><a href="hygrometry_ahu.html">Air handling units</a></li>
+          <li><a href="airhumide_transformations.html">Transformations et CTA</a></li>
           
           
           
@@ -269,19 +269,19 @@
       
   
   <li>
-      <a href="#">HVAC systems</a>
+      <a href="#">Systèmes CVC</a>
       <ul>
           
           
           
-          <li><a href="hvac_1.html">CVC lesson 1</a></li>
+          <li><a href="cvc_1.html">CVC leçon 1</a></li>
           
           
           
           
           
           
-          <li><a href="hvac_2.html">CVC lesson 2</a></li>
+          <li><a href="cvc_2.html">CVC leçon 2</a></li>
           
           
           
@@ -292,19 +292,19 @@
       
   
   <li>
-      <a href="#">Control systems</a>
+      <a href="#">Régulation</a>
       <ul>
           
           
           
-          <li class="active"><a href="control_1.html">Control 1</a></li>
+          <li><a href="regulation_1.html">Régulation 1</a></li>
           
           
           
           
           
           
-          <li><a href="control_2.html">Control 2</a></li>
+          <li><a href="regulation_2.html">Régulation 2</a></li>
           
           
           
@@ -331,7 +331,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Lesson 1</h1>
+   <h1 class="post-title-main">Mélanges d'air humide</h1>
 </div>
 
 
@@ -339,7 +339,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Leçon 1 de régulation</div>
+    <div class="summary">Comment calculer les propriétés de mélanges d'air humide</div>
    
 
     
@@ -372,15 +372,52 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="vidos">Vidéos</h2>
 
-<p>Section vidéos</p>
+<p><a href="/pdf/airhumide2 - melanges.pdf">Diapos au format PDF</a></p>
+
+<iframe src="https://player.vimeo.com/video/99904962?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 <h2 id="formulaire">Formulaire</h2>
 
-<p>Section formulaire</p>
+<p>Quand on mélange deux volumes d’air <script type="math/tex">V_1</script> et <script type="math/tex">V_2</script>, la masse d’air sec du volume résultant <script type="math/tex">V_3</script> est simplement :</p>
+
+<script type="math/tex; mode=display">m_{as,3} = m_{as,1} + m_{as,2}</script>
+
+<p>Si on parle de débits d’air plutôt que de volumes fixes, c’est exactement la même chose mais rapporté aux débits massiques :</p>
+
+<script type="math/tex; mode=display">\dot{m}_{as,3} = \dot{m}_{as,1} + \dot{m}_{as,2}</script>
+
+<p>Sur le diagramme de l’air humide, le mélange entre <script type="math/tex">V_1</script> et <script type="math/tex">V_2</script> est situé sur la droite entre ces deux points : c’est leur barycentre, pondéré par leurs masses (ou débits) d’air sec.</p>
+
+<p>La <strong>température</strong>, <strong>teneur en eau</strong> et <strong>enthalpie spécifique</strong> du mélange sont des sommes, pondérées par <script type="math/tex">m_{as}</script>, de ces propriétés des deux volumes d’origine :</p>
+
+<script type="math/tex; mode=display">m_{as,3} \, T_3 = m_{as,1} \, T_1 + m_{as,2} \, T_2</script>
+
+<script type="math/tex; mode=display">m_{as,3} \, r_3 = m_{as,1} \, r_1 + m_{as,2} \, r_2</script>
+
+<script type="math/tex; mode=display">m_{as,3} \, h_3 = m_{as,1} \, h_1 + m_{as,2} \, h_2</script>
 
 <h2 id="exercices">Exercices</h2>
 
-<p>Section exercices</p>
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Enoncé</a></li>
+    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Correction</a></li>
+</ul>
+
+<div class="tab-content">
+
+<div role="tabpanel" class="tab-pane active" id="enonce">
+
+    <p>Enoncé</p>
+
+  </div>
+
+<div role="tabpanel" class="tab-pane" id="correction">
+
+    <p>Correction</p>
+
+  </div>
+
+</div>
 
 
     <div class="tags">
@@ -388,8 +425,6 @@ $('#toc').on('click', 'a', function() {
         <b>Tags: </b>
         
         
-        
-        <a href="tag_régulation.html" class="btn btn-default navbar-btn cursorNorm" role="button">régulation</a>
         
         
         

@@ -26,6 +26,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/airhumide_melanges.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/airhumide_transformations.html</loc>
   </url>
   
@@ -137,6 +143,12 @@
   
   <url>
     <loc>http://localhost:4000/hygrometry_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/hygrometry_chart.html</loc>
   </url>
   
   

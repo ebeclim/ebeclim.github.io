@@ -47,6 +47,10 @@ entries:
       url: /hygrometry_chart.html
       output: web, pdf
 
+    - title: Mixing
+      url: /hygrometry_mixing.html
+      output: web, pdf
+
     - title: Air handling units
       url: /hygrometry_ahu.html
       output: web, pdf
