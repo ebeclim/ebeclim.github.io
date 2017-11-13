@@ -23,7 +23,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Electronic analogy
+    - title: Electrical analogy
       url: /heat_analogy.html
       output: web, pdf
 
@@ -39,7 +39,19 @@ entries:
       url: /heat_airflow.html
       output: web, pdf
 
-  - title: Hygrometry
+  - title: HVAC systems
+    output: web, pdf
+    folderitems:
+
+    - title: HVAC lesson 1
+      url: /hvac_1.html
+      output: web, pdf
+
+    - title: HVAC lesson 2
+      url: /hvac_2.html
+      output: web, pdf
+
+  - title: Psychrometrics
     output: web, pdf
     folderitems:
 
@@ -47,24 +59,12 @@ entries:
       url: /hygrometry_chart.html
       output: web, pdf
 
-    - title: Mixing
+    - title: Air mixtures
       url: /hygrometry_mixing.html
       output: web, pdf
 
     - title: Air handling units
       url: /hygrometry_ahu.html
-      output: web, pdf
-
-  - title: HVAC systems
-    output: web, pdf
-    folderitems:
-
-    - title: CVC lesson 1
-      url: /hvac_1.html
-      output: web, pdf
-
-    - title: CVC lesson 2
-      url: /hvac_2.html
       output: web, pdf
 
   - title: Control systems

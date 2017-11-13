@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="En régime permanent, comment estimer le temps de réponse d'un bâtiment">
-<meta name="keywords" content="thermique,  thermique, bâtiment, énergie, inertie">
+<meta name="description" content="How to estimate dynamic effects in a more or less simplified way">
+<meta name="keywords" content="heat,  heat, transfer, inertia, transient">
 <title>Thermal inertia | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -207,7 +207,7 @@
           
           
           
-          <li><a href="heat_analogy.html">Electronic analogy</a></li>
+          <li><a href="heat_analogy.html">Electrical analogy</a></li>
           
           
           
@@ -239,7 +239,30 @@
       
   
   <li>
-      <a href="#">Hygrometry</a>
+      <a href="#">HVAC systems</a>
+      <ul>
+          
+          
+          
+          <li><a href="hvac_1.html">HVAC lesson 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="hvac_2.html">HVAC lesson 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Psychrometrics</a>
       <ul>
           
           
@@ -251,7 +274,7 @@
           
           
           
-          <li><a href="hygrometry_mixing.html">Mixing</a></li>
+          <li><a href="hygrometry_mixing.html">Air mixtures</a></li>
           
           
           
@@ -259,29 +282,6 @@
           
           
           <li><a href="hygrometry_ahu.html">Air handling units</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">HVAC systems</a>
-      <ul>
-          
-          
-          
-          <li><a href="hvac_1.html">CVC lesson 1</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="hvac_2.html">CVC lesson 2</a></li>
           
           
           
@@ -339,7 +339,7 @@
 <div class="post-content">
 
    
-    <div class="summary">En régime permanent, comment estimer le temps de réponse d'un bâtiment</div>
+    <div class="summary">How to estimate dynamic effects in a more or less simplified way</div>
    
 
     
@@ -370,29 +370,31 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="vido">Vidéo</h2>
+  <h2 id="video">Video</h2>
 
-<p>Explication de l’inertie thermique et de la différence entre une isolation par l’intérieur ou par l’extérieur. <a href="/pdf/thermique3 - inertie.pdf">Diapos au format PDF</a></p>
+<p>Explanation of thermal inertia and the differences between internal and external insulation</p>
 
-<iframe src="https://player.vimeo.com/video/142244633?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p>Explication de l’inertie thermique et de la différence entre une isolation par l’intérieur ou par l’extérieur. <a href="/pdf/heat transfer 3 - inertia.pdf">PDF slides</a></p>
 
-<h2 id="formulaire">Formulaire</h2>
+<iframe src="https://player.vimeo.com/video/242072875?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<p>La chaleur accumulée par une paroi à la température <script type="math/tex">T_i</script> est définie par rapport à une température de référence <script type="math/tex">T_0</script>, souvent prise à 0°C. Pour un mur d’épaisseur <script type="math/tex">e_i</script>, masse volumique <script type="math/tex">\rho_i</script> et capacité thermique <script type="math/tex">c_{p,i}</script>, elle peut être exprimée par unité de surface de la paroi en [J/m<script type="math/tex">^2</script>] :</p>
+<h2 id="formulas">Formulas</h2>
+
+<p>Heat stored in a building component is defined by the difference between its temperature <script type="math/tex">T_i</script> and a reference temperature <script type="math/tex">T_0</script>. In a wall of thickness <script type="math/tex">e_i</script>, mass density <script type="math/tex">\rho_i</script> and heat capacity <script type="math/tex">c_{p,i}</script>, it can be estimated in the unit [J/m<script type="math/tex">^2</script>] as:</p>
 
 <script type="math/tex; mode=display">Q_i = \rho_i . e_i . c_{p,i} (T_i-T_0)</script>
 
-<p>L’inertie totale d’une paroi de <script type="math/tex">n</script> couches de matériaux peut être estimée par la somme de ces énergies accumulées dans chaque couche :</p>
+<p>The total inertia of an <script type="math/tex">n</script>-layered wall is the sum of these accumulated energies over all layers:</p>
 
 <script type="math/tex; mode=display">Q = \sum_{i=1}^n Q_i = \sum_{i=1}^n \rho_i . e_i . c_{p,i} (T_i-T_0)</script>
 
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Attention aux unités ! Faites toujours une analyse dimensionnelle pour véfifier que vous n’avez pas oublié une masse volumique ou une épaisseur.</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Always check for units! It’s very easy to get them wrong but it’s also easy to make sure they’re right.</div>
 
 <table>
 <tr>
 <th> <img src="images/thermique transitoire.png" style="width: 250px;" /> </th>
 <th style="font-weight: normal">
-En régime non transitoire, on peut calculer la variation d'une température dans le temps en fonction des valeurs R et C d'un élément de paroi. Ces valeurs dépendent de l'épaisseur de discrétisation et des propriétés du matériau. Pour l'exemple ci-contre, on résoud l'équation :
+In a transient state, we can calculate the evolution of temperatures in time as a function of R and C values of a building component. These values depend on the discretization size and material properties. In the example shown here, the following equation is to be solved:
 
 $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) $$
 
@@ -400,68 +402,66 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
 </tr>
 </table>
 
-<h2 id="exercices">Exercices</h2>
-
-<p>Exercice issu d’un poly de l’INSA Lyon.</p>
+<h2 id="exercise">Exercise</h2>
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Enoncé</a></li>
-    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Correction</a></li>
+    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Questioning</a></li>
+    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Solution</a></li>
 </ul>
 
 <div class="tab-content">
 
 <div role="tabpanel" class="tab-pane active" id="enonce">
 
-    <p>On considère une paroi constituée de trois couches :</p>
+    <p>Consider a wall made of three layers:</p>
 
     <table>
       <thead>
         <tr>
-          <th>Couche 1 (béton)</th>
-          <th> Couche 2 (isolant)</th>
-          <th>Couche 3 (enduit)</th>
+          <th>Layer 1 (concrete)</th>
+          <th> Layer 2 (insulatin)</th>
+          <th>Layer 3 (finishing)</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><script type="math/tex">e_b=15</script> cm</td>
+          <td><script type="math/tex">e_c=15</script> cm</td>
           <td><script type="math/tex">e_i=4</script> cm</td>
-          <td><script type="math/tex">e_e=1,5</script> cm</td>
+          <td><script type="math/tex">e_f=1,5</script> cm</td>
         </tr>
         <tr>
-          <td><script type="math/tex">\lambda_b=1,5</script> W/m.K</td>
+          <td><script type="math/tex">\lambda_c=1,5</script> W/m.K</td>
           <td><script type="math/tex">\lambda_i=0,04</script> W/m.K</td>
-          <td><script type="math/tex">\lambda_e=1,5</script> W/m.K</td>
+          <td><script type="math/tex">\lambda_f=1,5</script> W/m.K</td>
         </tr>
         <tr>
-          <td><script type="math/tex">c_b=920</script> J/kg.K</td>
+          <td><script type="math/tex">c_c=920</script> J/kg.K</td>
           <td><script type="math/tex">c_i=920</script> J/kg.K</td>
-          <td><script type="math/tex">c_e=920</script> J/kg.K</td>
+          <td><script type="math/tex">c_f=920</script> J/kg.K</td>
         </tr>
         <tr>
-          <td><script type="math/tex">\rho_b=2700</script> kg/m<script type="math/tex">^3</script></td>
+          <td><script type="math/tex">\rho_c=2700</script> kg/m<script type="math/tex">^3</script></td>
           <td><script type="math/tex">\rho_i=75</script> kg/m<script type="math/tex">^3</script></td>
-          <td><script type="math/tex">\rho_e=2700</script> kg/m<script type="math/tex">^3</script></td>
+          <td><script type="math/tex">\rho_f=2700</script> kg/m<script type="math/tex">^3</script></td>
         </tr>
       </tbody>
     </table>
 
-    <p>La température extérieure est <script type="math/tex">T_e=-5°C</script> et la température intérieure est <script type="math/tex">T_i=20°C</script>. Le coefficient d’échange superficiel extérieur est <script type="math/tex">h_e=16,7</script> W/m<script type="math/tex">^2</script>.K et le coefficient intérieur est <script type="math/tex">h_i=9,1</script> W/m<script type="math/tex">^2</script>.K</p>
+    <p>The outdoor temperature is <script type="math/tex">T_e=-5°C</script> and the indoor temperature is <script type="math/tex">T_i=20°C</script>. The outdoor heat transfer coefficient is <script type="math/tex">h_e=16,7</script> W/m<script type="math/tex">^2</script>.K and the indoor one is <script type="math/tex">h_i=9,1</script> W/m<script type="math/tex">^2</script>.K</p>
 
-    <p><strong>1. Isolation intérieure</strong></p>
+    <p><strong>1. Internal insulation</strong></p>
 
-    <p>On suppose que l’isolant est du côté intérieur par rapport au béton.</p>
+    <p>Suppose an internal insulation.</p>
 
     <ul>
-      <li>Calculer la résistance thermique de chaque couche et la densité de flux traversant le mur.</li>
-      <li>Calculer la température des interfaces entre les couches, et la température moyenne de chaque couche.</li>
-      <li>Calculer le volant thermique total de la paroi.</li>
+      <li>Calculate the thermal resistance of each layer and the heat flux <script type="math/tex">\varphi</script> through the wall.</li>
+      <li>Calculate the temperature distribution across the wall and the average temperature of each material.</li>
+      <li>Calculate the total stored heat and estimate the heat inertia.</li>
     </ul>
 
-    <p><strong>2. Isolation extérieure</strong></p>
+    <p><strong>2. External insulation</strong></p>
 
-    <p>Répondre aux mêmes questions dans le cas où l’isolant est du côté extérieur par rapport au béton. Quelles sont les différences avec l’isolation intérieure ?</p>
+    <p>Answer the same questions as above in the case of an external insulation</p>
 
   </div>
 
@@ -480,8 +480,6 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
         
         
         
-        <a href="tag_thermique.html" class="btn btn-default navbar-btn cursorNorm" role="button">thermique</a>
-        
         
         
     </div>
@@ -497,7 +495,7 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Oct 11, 2017 <br />
+ Site last generated: Nov 13, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

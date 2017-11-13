@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Faire un bilan de pression pour estimer les débits d'air entre les zones thermique">
-<meta name="keywords" content="thermique,  thermique, bâtiment, énergie, ventilation">
+<meta name="keywords" content="heat,  heat, transfer, buildings, ventilation">
 <title>Air flow | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -207,7 +207,7 @@
           
           
           
-          <li><a href="heat_analogy.html">Electronic analogy</a></li>
+          <li><a href="heat_analogy.html">Electrical analogy</a></li>
           
           
           
@@ -239,7 +239,30 @@
       
   
   <li>
-      <a href="#">Hygrometry</a>
+      <a href="#">HVAC systems</a>
+      <ul>
+          
+          
+          
+          <li><a href="hvac_1.html">HVAC lesson 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="hvac_2.html">HVAC lesson 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Psychrometrics</a>
       <ul>
           
           
@@ -251,7 +274,7 @@
           
           
           
-          <li><a href="hygrometry_mixing.html">Mixing</a></li>
+          <li><a href="hygrometry_mixing.html">Air mixtures</a></li>
           
           
           
@@ -259,29 +282,6 @@
           
           
           <li><a href="hygrometry_ahu.html">Air handling units</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">HVAC systems</a>
-      <ul>
-          
-          
-          
-          <li><a href="hvac_1.html">CVC lesson 1</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="hvac_2.html">CVC lesson 2</a></li>
           
           
           
@@ -370,17 +370,76 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="vidos">Vidéos</h2>
+  <h2 id="video">Video</h2>
 
-<p>Mettre ici les vidéos sur la Ventilation</p>
+<p>How to predict heat transfer due to ventilation, caused by the wind or the stack effect. <a href="/pdf/heat transfer 6 - aeraulics.pdf">PDF slides</a></p>
 
-<h2 id="formulaire">Formulaire</h2>
+<iframe src="https://player.vimeo.com/video/242243089?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<p>Le formulaire sous la forme d’un tableau et d’équations</p>
+<h2 id="formulas">Formulas</h2>
 
-<h2 id="exercices">Exercices</h2>
+<p>A small opening with an area <script type="math/tex">S</script> and a discharge coefficient <script type="math/tex">C_d</script> separate two rooms at the pressures <script type="math/tex">P_1</script> and <script type="math/tex">P_2</script>. The air flow rate <script type="math/tex">Q_v</script> [m<script type="math/tex">^3</script>/s] through the opening can be estimated by:</p>
 
-<p>Un ou deux exercices, pour commencer en format pdf séparément de la page ?</p>
+<script type="math/tex; mode=display">P_1 - P_2 = \frac{\rho Q_v^2}{2S^2C_d^2}</script>
+
+<p>In case of wind, the total air pressure is the sum of the atmospheric pressure <script type="math/tex">P_{atm}</script> and some dynamic pressure, which depends on a pressure coefficient <script type="math/tex">C_p</script> and wind velocity <script type="math/tex">V</script>.</p>
+
+<script type="math/tex; mode=display">P = P_{atm} + C_p \frac{1}{2} \rho V^2</script>
+
+<p>The mass density of air <script type="math/tex">\rho</script> [kg/m<script type="math/tex">^3</script>] is roughly equal to this relation, where the temperature <script type="math/tex">T</script> is in unit [K]:</p>
+
+<script type="math/tex; mode=display">\rho = \frac{353}{T}</script>
+
+<p><img src="images/thermique_tirage.png" style="width: 600px;" /></p>
+
+<p>The stack effect is caused by this relation between density and temperature. The two air volumes shown here have temperatures notes <script type="math/tex">T_e</script> and <script type="math/tex">T_i</script>. The pressure difference between them is a function of the coordinate <script type="math/tex">z</script>:</p>
+
+<script type="math/tex; mode=display">P_e(z) - P_i(z) = \left( P_e(0)-\rho_e \, g \, z\right) - \left( P_i(0)-\rho_i \, g \, z \right) = P_e(0)-P_i(0)-\rho_e \, g \, z \, \frac{T_i-T_e}{T_i}</script>
+
+<p>The <em>neutral plane</em> is the coordinate <script type="math/tex">z_n</script> at which this pressure difference is equal to zero:</p>
+
+<script type="math/tex; mode=display">z_n = \dfrac{P_e(0)-P_i(0)}{g(\rho_i-\rho_e)}</script>
+
+<h2 id="exercise">Exercise</h2>
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Questioning</a></li>
+    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Solution</a></li>
+</ul>
+
+<div class="tab-content">
+
+<div role="tabpanel" class="tab-pane active" id="enonce">
+
+    <p><img src="images/thermique_aeraulique.png" style="width: 500px;" /></p>
+
+    <p>A door of height <script type="math/tex">H=2</script>m and width <script type="math/tex">w=1</script>m separates two rooms at temperatures <script type="math/tex">T_1=15°C</script> and <script type="math/tex">T_2=21°C</script>.</p>
+
+    <p>Suppose (without proving it) that the air velocity at the interface is a function of the coordinate $z$$:</p>
+
+    <script type="math/tex; mode=display">V(z) = \sqrt{2\, \frac{P_1(z)-P_2(z)}{\rho}}</script>
+
+    <p>where <script type="math/tex">\rho</script> is the mass density on the side from which air flows (which depends on whether the coordinate is above or below the neutral plane).</p>
+
+    <p>Integrate <script type="math/tex">V(z)</script> over the height <script type="math/tex">H</script> to find the total mass flow rate of air <script type="math/tex">Q_m</script> [kg/s] through the door. Suppose the door is an infinite stack of small openings with a discharge coefficient <script type="math/tex">C_d=0.4212</script>.</p>
+
+  </div>
+
+<div role="tabpanel" class="tab-pane" id="correction">
+
+    <p>Below the neutral plane, air flows from room 1 to room 2 with a total rate of:</p>
+
+    <script type="math/tex; mode=display">Q_{m,12} = C_d \int_0^{z_n} \rho_1 \, V(z) \, w \, \mathrm{d}z</script>
+
+    <p>Above the neutral plane, air flows from room 2 to room 1 with a total rate of:</p>
+
+    <script type="math/tex; mode=display">Q_{m,21} = C_d \int_{z_n}^{H} \rho_2 \, V(z) \, w \, \mathrm{d}z</script>
+
+    <p>The net air flow rate from 1 to 2 is <script type="math/tex">Q_{m,12}-Q_{m,21}</script></p>
+
+  </div>
+
+</div>
 
 
     <div class="tags">
@@ -388,8 +447,6 @@ $('#toc').on('click', 'a', function() {
         <b>Tags: </b>
         
         
-        
-        <a href="tag_thermique.html" class="btn btn-default navbar-btn cursorNorm" role="button">thermique</a>
         
         
         
@@ -406,7 +463,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Oct 11, 2017 <br />
+ Site last generated: Nov 13, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

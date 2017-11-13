@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Comment inclure le soleil et les échanges radiatifs dans les calculs">
-<meta name="keywords" content="thermique,  thermique, bâtiment, énergie, rayonnement">
+<meta name="description" content="How to include heat input from the sun and radiative heat exchange between walls">
+<meta name="keywords" content="thermique,  heat, transfer, radiation, irradiance">
 <title>Thermal radiation | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
 
@@ -207,7 +207,7 @@
           
           
           
-          <li><a href="heat_analogy.html">Electronic analogy</a></li>
+          <li><a href="heat_analogy.html">Electrical analogy</a></li>
           
           
           
@@ -239,7 +239,30 @@
       
   
   <li>
-      <a href="#">Hygrometry</a>
+      <a href="#">HVAC systems</a>
+      <ul>
+          
+          
+          
+          <li><a href="hvac_1.html">HVAC lesson 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="hvac_2.html">HVAC lesson 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Psychrometrics</a>
       <ul>
           
           
@@ -251,7 +274,7 @@
           
           
           
-          <li><a href="hygrometry_mixing.html">Mixing</a></li>
+          <li><a href="hygrometry_mixing.html">Air mixtures</a></li>
           
           
           
@@ -259,29 +282,6 @@
           
           
           <li><a href="hygrometry_ahu.html">Air handling units</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">HVAC systems</a>
-      <ul>
-          
-          
-          
-          <li><a href="hvac_1.html">CVC lesson 1</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="hvac_2.html">CVC lesson 2</a></li>
           
           
           
@@ -339,7 +339,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Comment inclure le soleil et les échanges radiatifs dans les calculs</div>
+    <div class="summary">How to include heat input from the sun and radiative heat exchange between walls</div>
    
 
     
@@ -370,17 +370,80 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="vidos">Vidéos</h2>
+  <h2 id="solar-radiation-shortwave">Solar radiation (shortwave)</h2>
 
-<p>Section vidéos</p>
+<p><a href="/pdf/heat transfer 4 - short wave radiation.pdf">PDF slides</a></p>
 
-<h2 id="formulaire">Formulaire</h2>
+<iframe src="https://player.vimeo.com/video/242200967?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<p>Section formulaire</p>
+<p>The total heat <script type="math/tex">\Phi_{SW}</script> brought by the sun to a surface <script type="math/tex">S</script> with an absorption coefficient <script type="math/tex">\alpha</script> is the sum of direct irradiance <script type="math/tex">E_{dir}</script>, diffuse irradiance <script type="math/tex">E_{dif}</script> and reflected irradiance <script type="math/tex">E_{ref}</script>. Each of these variables can be calculated with a little trigonometry as functions of the angle of the wall and the position of the sun.</p>
 
-<h2 id="exercices">Exercices</h2>
+<script type="math/tex; mode=display">\Phi_{SW} = \alpha . S . (E_{dir}+E_{dir}+E_{ref})</script>
 
-<p>Section exercices</p>
+<p>The unit of <script type="math/tex">\Phi_{SW}</script> is [W], and not [W/m<script type="math/tex">^2</script>], since irradiances have been multiplied by and area <script type="math/tex">S</script>.</p>
+
+<h2 id="longwave-radiative-heat-exchange">Longwave radiative heat exchange</h2>
+
+<p><a href="/pdf/heat transfer 5 - short wave radiation.pdf">PDF slides</a></p>
+
+<iframe src="https://player.vimeo.com/video/242213846?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<p>View factors <script type="math/tex">F_{ij}</script> are required to solve the radiative heat exchange between walls.</p>
+
+<table>
+<tr>
+<th> <img src="images/thermique GLO1.png" style="width: 450px;" /> </th>
+<th style="font-weight: normal">
+
+In order for the system to be solvable, either the temperature or the net heat flux on each surface must be known. We can then solve it by using these two formulas:
+<br />
+<img src="images/thermique GLO2.png" style="width: 200px;" />
+<br />
+This allows to either describe the system as an electrical circuit, or as a linear system of equations.
+
+</th>
+</tr>
+</table>
+
+<h2 id="exercise">Exercise</h2>
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Questioning</a></li>
+    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Solution</a></li>
+</ul>
+
+<div class="tab-content">
+
+<div role="tabpanel" class="tab-pane active" id="enonce">
+
+    <p>Consider this room:</p>
+
+    <p><img src="images/thermique rayonnement exo.png" style="width: 250px;" /></p>
+
+    <ul>
+      <li>The wall <script type="math/tex">S_5</script> (on the left) is a window with a temperature of <script type="math/tex">T_5 = 8°C</script>.</li>
+      <li>The surface <script type="math/tex">S_0</script> is a radiator covering half the height of the wall on the right. Its temperature is <script type="math/tex">T_0 = 60°C</script>.</li>
+      <li>All other surfaces have a temperature of <script type="math/tex">T_0 = 20°C</script>.</li>
+    </ul>
+
+    <ol>
+      <li>
+        <p>Calculate the radiative heat loss through the window, and the net heat flux given by the radiator.</p>
+      </li>
+      <li>
+        <p>Solve the problem again with these new conditions: the surface <script type="math/tex">S_2</script> is adiabatic. Solve for its temperature <script type="math/tex">T_2</script>, and calculate the radiator heat flux again.</p>
+      </li>
+    </ol>
+
+  </div>
+
+<div role="tabpanel" class="tab-pane" id="correction">
+
+    <p>Correction à venir.</p>
+
+  </div>
+
+</div>
 
 
     <div class="tags">
@@ -406,7 +469,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Oct 11, 2017 <br />
+ Site last generated: Nov 13, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

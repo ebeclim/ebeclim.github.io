@@ -1,9 +1,9 @@
 ---
-title: Electronic analogy
+title: Thermal-electrical analogy
 summary: "Calculating heat transfer as if it were electric current"
 permalink: heat_analogy.html
 keywords: heat, transfer, electronic, analogy
-tags: [thermique]
+tags: [heat]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en
@@ -13,104 +13,104 @@ folder: en
 
 ### Video 1
 
-Introduction to the electronic analogy. [PDF slides](/pdf/thermique1 - analogie électrique.pdf)
+Introduction to the thermal-electrical analogy. [PDF slides](/pdf/heat transfer 1 - electric diagram.pdf)
 
-<iframe src="https://player.vimeo.com/video/141894652?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/242046233?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Video 2
 
-On peut utiliser l'analogie électrique à l'échelle d'un bâtiment pour représenter les transferts par conduction, convection et rayonnement. [PDF slides](/pdf/thermique2 - analogie électrique.pdf)
+Some examples on how to use the thermal-electrical analogy to model a variety of transfer phenomena. [PDF slides](/pdf/heat transfer 2 - electric diagram 2.pdf)
 
-<iframe src="https://player.vimeo.com/video/142221212?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/242058869?color=ff9933" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Formulas
 
-La chaleur traversant une unité de surface de mur est proportionnelle à l'écart de température de part et d'autre du mur $$\Delta T$$, et à son coefficient de transfert $$U$$ [W/(m$$^2$$.K)] :
+The heat flux per square meter of a wall is proportional to the temperature difference across the wall $$\Delta T$$, and to its transmittance $$U$$ [W/(m$$^2$$.K)] :
 
 $$ \varphi = U . \Delta T = \dfrac{1}{R} . \Delta T$$
 
-Cette chaleur surfacique $$\varphi$$ a pour dimension [W/m$$^2$$]. La chaleur totale $$\phi$$ perdue à travers un mur de surface $$S$$, en [W], vaut donc :
+The unit of this heat flux $$\varphi$$ is [W/m$$^2$$]. The total heat $$\phi$$ flowing across a wall of area $$S$$, in [W], is then:
 
 $$ \phi = S . \varphi = S . U . \Delta T$$
 
-On peut définir un coefficient de déperdition totale comme $$ D = S.U $$ [W/K]
+We can also define a global heat loss coefficient such as $$ D = S.U $$ [W/K]
 
-La résistance thermique $$R_i$$ d'un composant d'épaisseur $$e_i$$ et de conductivité thermique $$\lambda_i$$ vaut :
+The thermal resistance $$R_i$$ of a component of thickness $$e_i$$ and heat conductivity $$\lambda_i$$ is:
 
 $$R_i=\dfrac{e_i}{\lambda_i}$$
 
-Un mur à plusieurs couches se comporte comme plusieurs résistances placées en série : leurs résistances s'additionnent :
+A wall made of several material layers behaves like a series circuit of resistances: their values add up.
 
 $$ R = \sum_i R_i = \sum_i \dfrac{e_i}{\lambda_i}$$
 
-Un mur composé de plusieurs surfaces (mur bas, vitres...) se comporte comme plusieurs résistances en parallèle: la chaleur traverse chaque surface $$S_i$$ (m$$^2$$) en même temps avec plus ou moins de facilité. Les coefficients de déperdition $$D$$ de chaque surface s'additionnent :
+A building envelope made of several separated parts (opaque wall, windows, roof...) can be modelled as a parallel circuit of resistances: heat flows through each surface $$S_i$$ (m$$^2$$) simultaneously with more or less intensity. The heat loss coefficients $$D$$ of each surface add up:
 
 $$ D = S.U = \sum_i S_i.U_i $$
 
-{% include warning.html content="Pour additionner des coefficients de déperdition, il faut les pondérer par leur surface: on additionne des [W], pas des [W/m$$^2$$]" %}
+{% include warning.html content="Surface transfer coefficients must be summed in unit [W], not in [W/m$$^2$$]" %}
 
-|  | Variable | Dimension |  |
+|  | Variable | Unit |  |
 |-------|--------|---------|
-| $$R$$ | Résistance | (m$$^2$$.K)/W | s'additionne en série |
-| $$U$$ | Coefficient de transfert surfacique | W/(m$$^2$$.K) |  |
-| $$D$$ | Coefficient de déperdition | W/K | s'additionne en parallèle |
+| $$R$$ | Thermal resistance | (m$$^2$$.K)/W | can be summed in series |
+| $$U$$ | Thermal transmittance | W/(m$$^2$$.K) |  |
+| $$D$$ | Heat loss coefficient | W/K | can be summed in parallel |
 
 Cette méthode peut être appliquée pour représenter les transferts à l'échelle de tout un bâtiment, y compris en incluant des transferts par renouvellement d'air (voir vidéo 2).
 
-## Exercice
+## Exercise
 
-On veut calculer les déperditions thermiques d'un local isolé.
+Calculate the heat loss coefficient of an insulated room.
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Enoncé</a></li>
-    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Correction</a></li>
+    <li class="active"><a class="noCrossRef" href="#enonce" data-toggle="tab">Questioning</a></li>
+    <li><a class="noCrossRef" href="#correction" data-toggle="tab">Solution</a></li>
 </ul>
 
 <div class="tab-content">
 
 <div role="tabpanel" class="tab-pane active" id="enonce" markdown="1">
 
-Les parois du local sont composées de :
+The walls of a room are made of:
 
-* 44 m$$^2$$ de mur en béton ($$e_b=15$$ cm, $$\lambda_b=2,3$$ W/(m.K)) avec une couche d'isolant ($$e_{iso}=10$$ cm, $$\lambda_{iso}=0,04$$ W/(m.K))
-* 8 m$$^2$$ de double vitrage ($$U_v=3,3$$ W/(m$$^2$$.K))
-* La résistance surfacique intérieure est $$h_i = 0,11$$ (m$$^2$$.K)/W, et la résistance extérieure est $$h_e = 0,07$$ (m$$^2$$.K)/W
+* 44 m$$^2$$ of concrete wall ($$e_c=15$$ cm, $$\lambda_c=2,3$$ W/(m.K)) with an insulation layer ($$e_{i}=10$$ cm, $$\lambda_{i}=0,04$$ W/(m.K))
+* 8 m$$^2$$ of double glazing ($$U_v=3,3$$ W/(m$$^2$$.K))
+* The indoor heat transfer coefficient is $$h_i = 0,11$$ (m$$^2$$.K)/W, the outdoor one is $$h_e = 0,07$$ (m$$^2$$.K)/W
 
-Le local a également un taux de renouvellement d'air depuis l'extérieur de 9 m$$^3$$/h.
+The room is ventilated with an air renewal rate of 9 m$$^3$$/h.
 
-Quelle puissance doit-on fournir pour maintenir le local à 19°C, si la température extérieure est de 2°C ?
+Calculate the heating power that should be prescribed to maintain an indoor temperature of 19°C, if the outdoor temperature is 2°C.
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="correction" markdown="1">
 
-Les déperditions thermiques totales du local sont la somme de trois parties : les pertes par le mur béton+isolant, les pertes par les vitres et les pertes par renouvellement d'air. Il suffit de calculer ces trois parties et de les additionner.
+The total heat loss of the room is the sum of three parts: heat flux through the concrete+insulation wall, heat flux through the windows and air renewal.
 
-**1. Mur béton isolé**
+**1. Insulated concrete wall**
 
-La résistance thermique totale doit tenir compte des deux couches du mur et des résistances surfaciques
+The thermal resistance is the sum of each layer's resistance, and the surface resistances:
 
-$$R_1 = h_i + \dfrac{e_b}{\lambda_b} + \dfrac{e_{iso}}{\lambda_{iso}} + h_e = 0,11 + \dfrac{0,15}{2,3} + \dfrac{0,10}{0,04} + 0,07 = 2,75$$ (m$$^2$$.K)/W
+$$R_1 = h_i + \dfrac{e_c}{\lambda_c} + \dfrac{e_{i}}{\lambda_{i}} + h_e = 0,11 + \dfrac{0,15}{2,3} + \dfrac{0,10}{0,04} + 0,07 = 2,75$$ (m$$^2$$.K)/W
 
-La déperdition $$D_1$$ est ensuite l'inverse de cette résistance, multiplié par la surface de mur:
+The heat loss is the reciprocal of this total resistance, times the area of the wall:
 
 $$D_1 = \dfrac{S_1}{R_1} = \dfrac{44}{2,75} = 16,03$$ W/K
 
-**2. Vitres**
+**2. Windows**
 
-Le coefficient $$U_v$$ fourni pour le vitrage n'inclut probablement pas les résistances surfaciques. Il faut les ajouter à la résistance de ce composant pour obtenir le coefficient de déperdition total des vitres $$D_2$$:
+The $$U_v$$ transmittance that describes the glazing probably doesn't include the heat transfer coefficients $$h_e$$ and $$h_i$$. They should be included in the equation of the total glazing heat loss coefficient:
 
 $$D_2 = \dfrac{S_2}{h_i+\frac{1}{U_v}+h_e} = \dfrac{8}{0.11+\frac{1}{3,3}+0,07} = 16,56$$ W/K
 
-**3. Renouvellement d'air**
+**3. Air renewal**
 
-Si le débit d'air est donné en (m$$^3$$/h), le coefficient de déperdition qui y est associé se calcule facilement:
+If the air renewal rate is given in the unit (m$$^3$$/h), the heat loss associated to it can be calculated easily:
 
 $$D_3 = 0,34 \, Q_v = 3,06$$ W/K
 
-**Total**
+**Summary**
 
-La puissance totale $$\phi$$ perdue par le local est la somme des trois composantes de déperditions, multipliée par l'écart de température intérieur-extérieur:
+The total heating power lost by the room is the sum of these three types of heat loss, times the indoor-outdoor temperature difference:
 
 $$\phi = \underbrace{(D_1+D_2+D_3)}_{W/K}.\underbrace{\Delta T}_{K} = (16,03 + 16,56 + 3,06 ). (19-2) = 606$$ W
 

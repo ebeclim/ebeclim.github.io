@@ -15,8 +15,6 @@ This website is meant to supplement lectures given at the [Polytech Annecy-Chamb
 
 The website is made of the four following sections. Each section has several pages, and each page can be seen as a short self-sufficient lesson including videos and exercises.
 
-The English translation of the website is still incomplete. Videos are only available in French for now.
-
 <div class="row">
 
          <div class="col-md-3 col-sm-6">
@@ -28,24 +26,9 @@ The English translation of the website is still incomplete. Videos are only avai
                      </span>
                  </div>
                  <div class="panel-body">
-                     <h4>Heat transfer</h4>
+                     <h4>Heat transfer in buildings</h4>
                      <p>Calculating heat transfer in buildings</p>
                      <a href="heat_intro.html" class="btn btn-primary">Contents</a>
-                 </div>
-             </div>
-         </div>
-         <div class="col-md-3 col-sm-6">
-             <div class="panel panel-default text-center">
-                 <div class="panel-heading">
-                     <span class="fa-stack fa-5x">
-                           <i class="fa fa-circle fa-stack-2x" style="color:teal"></i>
-                           <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
-                     </span>
-                 </div>
-                 <div class="panel-body">
-                     <h4>Psychrometrics</h4>
-                     <p>From reading the psychrometric chart to controlling humidity with an AHU </p>
-                     <a href="hygrometry_intro.html" class="btn btn-primary">Contents</a>
                  </div>
              </div>
          </div>
@@ -61,6 +44,21 @@ The English translation of the website is still incomplete. Videos are only avai
                      <h4>HVAC systems</h4>
                      <p>Heating, ventilation and air conditioning</p>
                      <a href="cvc_intro.html" class="btn btn-primary">Contents</a>
+                 </div>
+             </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+             <div class="panel panel-default text-center">
+                 <div class="panel-heading">
+                     <span class="fa-stack fa-5x">
+                           <i class="fa fa-circle fa-stack-2x" style="color:teal"></i>
+                           <i class="fa fa-cloud fa-stack-1x fa-inverse"></i>
+                     </span>
+                 </div>
+                 <div class="panel-body">
+                     <h4>Psychrometrics</h4>
+                     <p>From reading the psychrometric chart to controlling humidity with an AHU </p>
+                     <a href="hygrometry_intro.html" class="btn btn-primary">Contents</a>
                  </div>
              </div>
          </div>

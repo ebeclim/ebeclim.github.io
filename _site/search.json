@@ -139,8 +139,8 @@
 
 {
 "title": "Air flow",
-"tags": "thermique",
-"keywords": "thermique, bâtiment, énergie, ventilation",
+"tags": "heat",
+"keywords": "heat, transfer, buildings, ventilation",
 "url": "heat_airflow.html",
 "summary": "Faire un bilan de pression pour estimer les débits d'air entre les zones thermique"
 }
@@ -149,8 +149,8 @@
 
 
 {
-"title": "Electronic analogy",
-"tags": "thermique",
+"title": "Thermal-electrical analogy",
+"tags": "heat",
 "keywords": "heat, transfer, electronic, analogy",
 "url": "heat_analogy.html",
 "summary": "Calculating heat transfer as if it were electric current"
@@ -161,10 +161,10 @@
 
 {
 "title": "Thermal inertia",
-"tags": "thermique",
-"keywords": "thermique, bâtiment, énergie, inertie",
+"tags": "heat",
+"keywords": "heat, transfer, inertia, transient",
 "url": "heat_inertia.html",
-"summary": "En régime permanent, comment estimer le temps de réponse d'un bâtiment"
+"summary": "How to estimate dynamic effects in a more or less simplified way"
 }
 ,
 
@@ -172,8 +172,8 @@
 
 {
 "title": "Heat transfer",
-"tags": "thermique",
-"keywords": "thermique, bâtiment, énergie",
+"tags": "heat",
+"keywords": "heat, transfer, buildings",
 "url": "heat_intro.html",
 "summary": "How to estimate heat loss coefficients of buildings due to either conductive, convective or radiative transfer"
 }
@@ -184,9 +184,9 @@
 {
 "title": "Thermal radiation",
 "tags": "thermique",
-"keywords": "thermique, bâtiment, énergie, rayonnement",
+"keywords": "heat, transfer, radiation, irradiance",
 "url": "heat_radiation.html",
-"summary": "Comment inclure le soleil et les échanges radiatifs dans les calculs"
+"summary": "How to include heat input from the sun and radiative heat exchange between walls"
 }
 ,
 

@@ -60,7 +60,9 @@ On considère une pièce parallélépipédique aux dimensions suivantes :
 * La surface $$S_0$$ est un radiateur couvrant la moitié de la hauteur du mur de droite, à la température $$T_0 = 60°C$$.
 * Toutes les autres parois sont à la température $$T_0 = 20°C$$.
 
-Calculer les pertes radiatives de la pièce par la fenêtre, et le flux net radiatif cédé par le radiateur.
+1. Calculer les pertes radiatives de la pièce par la fenêtre, et le flux net radiatif cédé par le radiateur.
+
+2. On considère maintenant que la surface $$S_2$$ (le sol) est adiabatique. Calculer sa température $$T_2$$ et calculer à nouveau le flux net cédé par le radiateur.
 
 </div>
 

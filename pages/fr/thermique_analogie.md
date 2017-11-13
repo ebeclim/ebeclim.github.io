@@ -52,7 +52,7 @@ $$ D = S.U = \sum_i S_i.U_i $$
 |  | Variable | Dimension |  |
 |-------|--------|---------|
 | $$R$$ | Résistance | (m$$^2$$.K)/W | s'additionne en série |
-| $$U$$ | Coefficient de transfert surfacique | W/(m$$^2$$.K) |  |
+| $$U$$ | Coefficient de transfert | W/(m$$^2$$.K) |  |
 | $$D$$ | Coefficient de déperdition | W/K | s'additionne en parallèle |
 
 Cette méthode peut être appliquée pour représenter les transferts à l'échelle de tout un bâtiment, y compris en incluant des transferts par renouvellement d'air (voir vidéo 2).
