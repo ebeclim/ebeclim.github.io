@@ -239,6 +239,29 @@
       
   
   <li>
+      <a href="#">Systèmes CVC</a>
+      <ul>
+          
+          
+          
+          <li><a href="cvc_1.html">CVC leçon 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="cvc_2.html">CVC leçon 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a href="#">Air humide</a>
       <ul>
           
@@ -259,29 +282,6 @@
           
           
           <li><a href="airhumide_transformations.html">Transformations et CTA</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">Systèmes CVC</a>
-      <ul>
-          
-          
-          
-          <li><a href="cvc_1.html">CVC leçon 1</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="cvc_2.html">CVC leçon 2</a></li>
           
           
           
@@ -384,11 +384,11 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="echanges-radiatifs-entre-parois-grandes-longueurs-donde">Echanges radiatifs entre parois (grandes longueurs d’onde)</h2>
 
+<h3 id="vido">Vidéo</h3>
+
 <p>Deuxième vidéo sur le rayonnement, où on aborde le calcul des températures des parois sous l’effet des échanges radiatifs, et la description de la température radiante moyenne. <a href="/pdf/thermique5 - rayonnement GLO.pdf">Diapos au format PDF</a></p>
 
 <iframe src="https://player.vimeo.com/video/142616863?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-
-<p>Pour résoudre un problème d’échange radiatif (grandes longueurs d’onde) entre parois, il faut d’abord connaître tous les facteurs de forme <script type="math/tex">F_{ij}</script></p>
 
 <table>
 <tr>
@@ -397,7 +397,41 @@ $('#toc').on('click', 'a', function() {
 On peut ensuite établir un schéma électrique équivalent à l'ensemble des échanges, où les noeuds sont des émissivités ou des radiosités. Le système peut être résolu si chaque paroi a soit une température connue, soit un flux net de chaleur connu (par exemple une paroi adiabatique). Selon le cas, on peut alors exprimer le flux net de chaque paroi par l'une ou l'autre de ces formules :
 <br />
 <img src="images/thermique GLO2.png" style="width: 200px;" />
+</th>
+</tr>
+</table>
 
+<p>Sans passer par un schéma électrique équivalent, le plus simple est d’écrire un système d’équations linéaires dont la solution est un vecteur contenant l’ensemble des radiosités.</p>
+
+<h3 id="facteurs-de-forme">Facteurs de forme</h3>
+
+<p>Pour résoudre un problème d’échange radiatif (grandes longueurs d’onde) entre parois, il faut d’abord connaître tous les facteurs de forme <script type="math/tex">F_{ij}</script>. Les voici dans deux cas particuliers courants:</p>
+
+<table>
+<tr>
+<th> <img src="images/view factor 1.png" style="width: 150px;" /> </th>
+<th style="font-weight: normal">
+Deux surfaces parallèles de mêmes dimensions:
+
+$$ F_{12} = \frac{1}{\pi x y} \left[ \ln \frac{x_1^2 y_1^2}{x_1^2+y_1^2-1} + 2x\left(y_1 \arctan \frac{x}{y_1}-\arctan x \right) + 2y\left(x_1 \arctan \frac{y}{x_1}-\arctan y \right)  \right] $$
+
+$$ \mathrm{avec} \: x_1=\sqrt{1+x^2} \: ; \: y_1=\sqrt{1+y^2} \: ; \: x=W/H \: ; \: y=L/H $$
+
+</th>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> <img src="images/view factor 2.png" style="width: 150px;" /> </th>
+<th style="font-weight: normal">
+Deux rectangles adjacents perpendiculaires:
+
+$$ F_{12} = \frac{1}{\pi w} \left[ h \arctan \left(\frac{1}{h} \right) + w \arctan \left(\frac{1}{w} \right) - \sqrt{h^2+w^2} \arctan \left(\frac{1}{\sqrt{h^2+w^2}} \right) + \frac{1}{4} \log \left( a \, b^{w^2} \, c^{h^2}\right) \right]$$
+
+$$ \mathrm{avec} \: a = \frac{(1+h^2)(1+w^2)}{1+h^2+w^2} \: ; \: b = \frac{w^2(1+h^2+w^2)}{(1+w^2)(h^2+w^2)} \: ; \: c = \frac{h^2(1+h^2+w^2)}{(1+w^2)(h^2+w^2)} $$
+
+$$  h=H/L \: ; \: w=W/L $$
 </th>
 </tr>
 </table>
@@ -420,17 +454,11 @@ On peut ensuite établir un schéma électrique équivalent à l'ensemble des é
     <ul>
       <li>La surface <script type="math/tex">S_5</script> (mur vertical gauche) est une baie vitrée à la température <script type="math/tex">T_5 = 8°C</script>.</li>
       <li>La surface <script type="math/tex">S_0</script> est un radiateur couvrant la moitié de la hauteur du mur de droite, à la température <script type="math/tex">T_0 = 60°C</script>.</li>
-      <li>Toutes les autres parois sont à la température <script type="math/tex">T_0 = 20°C</script>.</li>
+      <li>La surface <script type="math/tex">S_2</script> (le sol) est adiabatique.</li>
+      <li>Toutes les autres parois sont à la température <script type="math/tex">T = 20°C</script>.</li>
     </ul>
 
-    <ol>
-      <li>
-        <p>Calculer les pertes radiatives de la pièce par la fenêtre, et le flux net radiatif cédé par le radiateur.</p>
-      </li>
-      <li>
-        <p>On considère maintenant que la surface <script type="math/tex">S_2</script> (le sol) est adiabatique. Calculer sa température <script type="math/tex">T_2</script> et calculer à nouveau le flux net cédé par le radiateur.</p>
-      </li>
-    </ol>
+    <p>Calculer les pertes radiatives de la pièce par la fenêtre, le flux net radiatif cédé par le radiateur et la température du sol.</p>
 
   </div>
 
@@ -466,7 +494,7 @@ On peut ensuite établir un schéma électrique équivalent à l'ensemble des é
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Nov 13, 2017 <br />
+ Site last generated: Nov 15, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

@@ -23,11 +23,13 @@ $$\Phi$$ est exprimée ici en W et non en W/m$$^2$$, puisqu'on a multiplié la s
 
 ## Echanges radiatifs entre parois (grandes longueurs d'onde)
 
+### Vidéo
+
 Deuxième vidéo sur le rayonnement, où on aborde le calcul des températures des parois sous l’effet des échanges radiatifs, et la description de la température radiante moyenne. [Diapos au format PDF](/pdf/thermique5 - rayonnement GLO.pdf)
 
 <iframe src="https://player.vimeo.com/video/142616863?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Pour résoudre un problème d'échange radiatif (grandes longueurs d'onde) entre parois, il faut d'abord connaître tous les facteurs de forme $$F_{ij}$$
+
 
 <table>
 <tr>
@@ -36,7 +38,41 @@ Pour résoudre un problème d'échange radiatif (grandes longueurs d'onde) entre
 On peut ensuite établir un schéma électrique équivalent à l'ensemble des échanges, où les noeuds sont des émissivités ou des radiosités. Le système peut être résolu si chaque paroi a soit une température connue, soit un flux net de chaleur connu (par exemple une paroi adiabatique). Selon le cas, on peut alors exprimer le flux net de chaque paroi par l'une ou l'autre de ces formules :
 <br>
 <img src="images/thermique GLO2.png" style="width: 200px;">
+</th>
+</tr>
+</table>
 
+Sans passer par un schéma électrique équivalent, le plus simple est d'écrire un système d'équations linéaires dont la solution est un vecteur contenant l'ensemble des radiosités.
+
+### Facteurs de forme
+
+Pour résoudre un problème d'échange radiatif (grandes longueurs d'onde) entre parois, il faut d'abord connaître tous les facteurs de forme $$F_{ij}$$. Les voici dans deux cas particuliers courants:
+
+<table>
+<tr>
+<th> <img src="images/view factor 1.png" style="width: 150px;"> </th>
+<th style="font-weight: normal">
+Deux surfaces parallèles de mêmes dimensions:
+
+$$ F_{12} = \frac{1}{\pi x y} \left[ \ln \frac{x_1^2 y_1^2}{x_1^2+y_1^2-1} + 2x\left(y_1 \arctan \frac{x}{y_1}-\arctan x \right) + 2y\left(x_1 \arctan \frac{y}{x_1}-\arctan y \right)  \right] $$
+
+$$ \mathrm{avec} \: x_1=\sqrt{1+x^2} \: ; \: y_1=\sqrt{1+y^2} \: ; \: x=W/H \: ; \: y=L/H $$
+
+</th>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> <img src="images/view factor 2.png" style="width: 150px;"> </th>
+<th style="font-weight: normal">
+Deux rectangles adjacents perpendiculaires:
+
+$$ F_{12} = \frac{1}{\pi w} \left[ h \arctan \left(\frac{1}{h} \right) + w \arctan \left(\frac{1}{w} \right) - \sqrt{h^2+w^2} \arctan \left(\frac{1}{\sqrt{h^2+w^2}} \right) + \frac{1}{4} \log \left( a \, b^{w^2} \, c^{h^2}\right) \right]$$
+
+$$ \mathrm{avec} \: a = \frac{(1+h^2)(1+w^2)}{1+h^2+w^2} \: ; \: b = \frac{w^2(1+h^2+w^2)}{(1+w^2)(h^2+w^2)} \: ; \: c = \frac{h^2(1+h^2+w^2)}{(1+w^2)(h^2+w^2)} $$
+
+$$  h=H/L \: ; \: w=W/L $$
 </th>
 </tr>
 </table>
@@ -58,11 +94,10 @@ On considère une pièce parallélépipédique aux dimensions suivantes :
 
 * La surface $$S_5$$ (mur vertical gauche) est une baie vitrée à la température $$T_5 = 8°C$$.
 * La surface $$S_0$$ est un radiateur couvrant la moitié de la hauteur du mur de droite, à la température $$T_0 = 60°C$$.
-* Toutes les autres parois sont à la température $$T_0 = 20°C$$.
+* La surface $$S_2$$ (le sol) est adiabatique.
+* Toutes les autres parois sont à la température $$T = 20°C$$.
 
-1. Calculer les pertes radiatives de la pièce par la fenêtre, et le flux net radiatif cédé par le radiateur.
-
-2. On considère maintenant que la surface $$S_2$$ (le sol) est adiabatique. Calculer sa température $$T_2$$ et calculer à nouveau le flux net cédé par le radiateur.
+Calculer les pertes radiatives de la pièce par la fenêtre, le flux net radiatif cédé par le radiateur et la température du sol.
 
 </div>
 

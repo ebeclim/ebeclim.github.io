@@ -57,7 +57,7 @@ Le site est composé des quatre modules ci-dessous, qui contiennent chacun plusi
                  </div>
                  <div class="panel-body">
                      <h4>Air humide</h4>
-                     <p>Le diagramme de l'air humide, les mélanges et les transformations de l'air dans les CTA </p>
+                     <p>Le traitement de l'air, de la lecture du diagramme de l'air humide aux CTA </p>
                      <a href="airhumide_intro.html" class="btn btn-primary">Sommaire</a>
                  </div>
              </div>

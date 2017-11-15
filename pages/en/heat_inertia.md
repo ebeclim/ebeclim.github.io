@@ -11,9 +11,7 @@ folder: en
 
 ## Video
 
-Explanation of thermal inertia and the differences between internal and external insulation
-
-Explication de l'inertie thermique et de la différence entre une isolation par l'intérieur ou par l'extérieur. [PDF slides](/pdf/heat transfer 3 - inertia.pdf)
+Explanation of thermal inertia and the differences between internal and external insulation. [PDF slides](/pdf/heat transfer 3 - inertia.pdf)
 
 <iframe src="https://player.vimeo.com/video/242072875?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -61,9 +59,9 @@ Consider a wall made of three layers:
 | $$c_c=920$$ J/kg.K | $$c_i=920$$ J/kg.K | $$c_f=920$$ J/kg.K |
 | $$\rho_c=2700$$ kg/m$$^3$$ | $$\rho_i=75$$ kg/m$$^3$$ | $$\rho_f=2700$$ kg/m$$^3$$ |
 
-The outdoor temperature is $$T_e=-5°C$$ and the indoor temperature is $$T_i=20°C$$. The outdoor heat transfer coefficient is $$h_e=16,7$$ W/m$$^2$$.K and the indoor one is $$h_i=9,1$$ W/m$$^2$$.K
+The outdoor temperature is $$T_e=2°C$$ and the indoor temperature is $$T_i=20°C$$. The outdoor heat transfer coefficient is $$h_e=16,7$$ W/m$$^2$$.K and the indoor one is $$h_i=9,1$$ W/m$$^2$$.K
 
-**1. Internal insulation**
+**Exercise 1: inertia**
 
 Suppose an internal insulation.
 
@@ -71,15 +69,22 @@ Suppose an internal insulation.
 * Calculate the temperature distribution across the wall and the average temperature of each material.
 * Calculate the total stored heat and estimate the heat inertia.
 
-**2. External insulation**
-
 Answer the same questions as above in the case of an external insulation
+
+**Exercise 2: transient simulations**
+
+Simulate the evolution of temperature inside the wall by following these steps:
+
+* Discretise each material layer with a sufficient number of resistances and capacities (this is similar to a finite difference scheme)
+* Write the equations for the temporal evolution of temperature on each point. You can select either an implicit or an explicit scheme for time discretization.
+* Solve and plot the evolution of temperature at the interface between concrete and insulation, by supposing a uniform initial temperature $$T=10°C$$
+
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="correction" markdown="1">
 
-La correction sera bientôt affichée. En attendant venez en cours.
+The solution will be shown here soon.
 
 </div>
 

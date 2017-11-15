@@ -239,6 +239,29 @@
       
   
   <li>
+      <a href="#">Systèmes CVC</a>
+      <ul>
+          
+          
+          
+          <li><a href="cvc_1.html">CVC leçon 1</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="cvc_2.html">CVC leçon 2</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
       <a href="#">Air humide</a>
       <ul>
           
@@ -259,29 +282,6 @@
           
           
           <li><a href="airhumide_transformations.html">Transformations et CTA</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a href="#">Systèmes CVC</a>
-      <ul>
-          
-          
-          
-          <li><a href="cvc_1.html">CVC leçon 1</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a href="cvc_2.html">CVC leçon 2</a></li>
           
           
           
@@ -445,9 +445,9 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
       </tbody>
     </table>
 
-    <p>La température extérieure est <script type="math/tex">T_e=-5°C</script> et la température intérieure est <script type="math/tex">T_i=20°C</script>. Le coefficient d’échange superficiel extérieur est <script type="math/tex">h_e=16,7</script> W/m<script type="math/tex">^2</script>.K et le coefficient intérieur est <script type="math/tex">h_i=9,1</script> W/m<script type="math/tex">^2</script>.K</p>
+    <p>La température extérieure est <script type="math/tex">T_e=2°C</script> et la température intérieure est <script type="math/tex">T_i=20°C</script>. Le coefficient d’échange superficiel extérieur est <script type="math/tex">h_e=16,7</script> W/m<script type="math/tex">^2</script>.K et le coefficient intérieur est <script type="math/tex">h_i=9,1</script> W/m<script type="math/tex">^2</script>.K</p>
 
-    <p><strong>1. Isolation intérieure</strong></p>
+    <p><strong>Exercice 1 : estimation de l’inertie</strong></p>
 
     <p>On suppose que l’isolant est du côté intérieur par rapport au béton.</p>
 
@@ -457,15 +457,23 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
       <li>Calculer le volant thermique total de la paroi.</li>
     </ul>
 
-    <p><strong>2. Isolation extérieure</strong></p>
+    <p>Refaire ces calculs pour le cas où l’isolant est à l’extérieur par rapport au béton</p>
 
-    <p>Répondre aux mêmes questions dans le cas où l’isolant est du côté extérieur par rapport au béton. Quelles sont les différences avec l’isolation intérieure ?</p>
+    <p><strong>Exercice 2 : comportement dynamique</strong></p>
+
+    <p>On veut simuler le comportement dynamique de cette paroi en réponse à des sollicitations extérieures.</p>
+
+    <ul>
+      <li>Discrétiser chaque couche en un nombre suffisants de points et donner la valeur des résistances et capacités en chaque point (cela revient à une discrétisation de type différences finies)</li>
+      <li>Etablir les équations de l’évolution dans le temps de chaque point. On pourra prendre un schéma explicite si le pas de temps est suffisamment faible.</li>
+      <li>Résoudre et tracer l’évolution de la température à l’interface béton/isolant, en supposant une température initiale constante de <script type="math/tex">T=10°C</script></li>
+    </ul>
 
   </div>
 
 <div role="tabpanel" class="tab-pane" id="correction">
 
-    <p>La correction sera bientôt affichée. En attendant venez en cours.</p>
+    <p>La correction sera bientôt affichée.</p>
 
   </div>
 
@@ -495,7 +503,7 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Nov 13, 2017 <br />
+ Site last generated: Nov 15, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

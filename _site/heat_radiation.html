@@ -384,11 +384,13 @@ $('#toc').on('click', 'a', function() {
 
 <h2 id="longwave-radiative-heat-exchange">Longwave radiative heat exchange</h2>
 
+<h3 id="video">Video</h3>
+
 <p><a href="/pdf/heat transfer 5 - short wave radiation.pdf">PDF slides</a></p>
 
 <iframe src="https://player.vimeo.com/video/242213846?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
-<p>View factors <script type="math/tex">F_{ij}</script> are required to solve the radiative heat exchange between walls.</p>
+<h3 id="methodology">Methodology</h3>
 
 <table>
 <tr>
@@ -400,6 +402,40 @@ In order for the system to be solvable, either the temperature or the net heat f
 <img src="images/thermique GLO2.png" style="width: 200px;" />
 <br />
 This allows to either describe the system as an electrical circuit, or as a linear system of equations.
+
+</th>
+</tr>
+</table>
+
+<h3 id="view-factors">View factors</h3>
+
+<p>View factors <script type="math/tex">F_{ij}</script> are required to solve the radiative heat exchange between walls. Here are two formulas for view factors that two cover widespread specific cases:</p>
+
+<table>
+<tr>
+<th> <img src="images/view factor 1.png" style="width: 150px;" /> </th>
+<th style="font-weight: normal">
+Two parallel planes of equal sizes:
+
+$$ F_{12} = \frac{1}{\pi x y} \left[ \ln \frac{x_1^2 y_1^2}{x_1^2+y_1^2-1} + 2x\left(y_1 \arctan \frac{x}{y_1}-\arctan x \right) + 2y\left(x_1 \arctan \frac{y}{x_1}-\arctan y \right)  \right] $$
+
+$$ \mathrm{with} \: x_1=\sqrt{1+x^2} \: ; \: y_1=\sqrt{1+y^2} \: ; \: x=W/H \: ; \: y=L/H $$
+
+</th>
+</tr>
+</table>
+
+<table>
+<tr>
+<th> <img src="images/view factor 2.png" style="width: 150px;" /> </th>
+<th style="font-weight: normal">
+Two adjacent perpendicular rectangles:
+
+$$ F_{12} = \frac{1}{\pi w} \left[ h \arctan \left(\frac{1}{h} \right) + w \arctan \left(\frac{1}{w} \right) - \sqrt{h^2+w^2} \arctan \left(\frac{1}{\sqrt{h^2+w^2}} \right) + \frac{1}{4} \log \left( a \, b^{w^2} \, c^{h^2}\right) \right]$$
+
+$$ \mathrm{with} \: a = \frac{(1+h^2)(1+w^2)}{1+h^2+w^2} \: ; \: b = \frac{w^2(1+h^2+w^2)}{(1+w^2)(h^2+w^2)} \: ; \: c = \frac{h^2(1+h^2+w^2)}{(1+w^2)(h^2+w^2)} $$
+
+$$  h=H/L \: ; \: w=W/L $$
 
 </th>
 </tr>
@@ -423,23 +459,17 @@ This allows to either describe the system as an electrical circuit, or as a line
     <ul>
       <li>The wall <script type="math/tex">S_5</script> (on the left) is a window with a temperature of <script type="math/tex">T_5 = 8°C</script>.</li>
       <li>The surface <script type="math/tex">S_0</script> is a radiator covering half the height of the wall on the right. Its temperature is <script type="math/tex">T_0 = 60°C</script>.</li>
-      <li>All other surfaces have a temperature of <script type="math/tex">T_0 = 20°C</script>.</li>
+      <li>The surface <script type="math/tex">S_2</script> (the ground) is adiabatic.</li>
+      <li>All other surfaces have a temperature of <script type="math/tex">T = 20°C</script>.</li>
     </ul>
 
-    <ol>
-      <li>
-        <p>Calculate the radiative heat loss through the window, and the net heat flux given by the radiator.</p>
-      </li>
-      <li>
-        <p>Solve the problem again with these new conditions: the surface <script type="math/tex">S_2</script> is adiabatic. Solve for its temperature <script type="math/tex">T_2</script>, and calculate the radiator heat flux again.</p>
-      </li>
-    </ol>
+    <p>Calculate the radiative heat loss through the window, the net heat flux given by the radiator and the temperature of the ground.</p>
 
   </div>
 
 <div role="tabpanel" class="tab-pane" id="correction">
 
-    <p>Correction à venir.</p>
+    <p>Solution will be here soon.</p>
 
   </div>
 
@@ -469,7 +499,7 @@ This allows to either describe the system as an electrical circuit, or as a line
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Nov 13, 2017 <br />
+ Site last generated: Nov 15, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

@@ -142,7 +142,7 @@
 "tags": "heat",
 "keywords": "heat, transfer, buildings, ventilation",
 "url": "heat_airflow.html",
-"summary": "Faire un bilan de pression pour estimer les débits d'air entre les zones thermique"
+"summary": "Estimate heat transfer caused by ventilation, wind and stack effect"
 }
 ,
 
@@ -239,9 +239,9 @@
 {
 "title": "The psychrometric chart",
 "tags": "humidité",
-"keywords": "bâtiment, énergie, humidité",
+"keywords": "humidity, psychrometrics, moisture",
 "url": "hygrometry_chart.html",
-"summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
+"summary": "How to read the psychrometric chart"
 }
 ,
 
@@ -249,10 +249,10 @@
 
 {
 "title": "Hygrometry",
-"tags": "humidité",
-"keywords": "bâtiment, énergie, humidité",
+"tags": "humidity",
+"keywords": "humidity, air handling",
 "url": "hygrometry_intro.html",
-"summary": "Le diagramme de l'air humide, les mélanges et les transformations de l'air dans les CTA"
+"summary": "How to read the psychrometric chart, formulate the properties of air mixtures and air handling units"
 }
 ,
 

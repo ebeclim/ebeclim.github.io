@@ -372,9 +372,7 @@ $('#toc').on('click', 'a', function() {
 
   <h2 id="video">Video</h2>
 
-<p>Explanation of thermal inertia and the differences between internal and external insulation</p>
-
-<p>Explication de l’inertie thermique et de la différence entre une isolation par l’intérieur ou par l’extérieur. <a href="/pdf/heat transfer 3 - inertia.pdf">PDF slides</a></p>
+<p>Explanation of thermal inertia and the differences between internal and external insulation. <a href="/pdf/heat transfer 3 - inertia.pdf">PDF slides</a></p>
 
 <iframe src="https://player.vimeo.com/video/242072875?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
@@ -447,9 +445,9 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
       </tbody>
     </table>
 
-    <p>The outdoor temperature is <script type="math/tex">T_e=-5°C</script> and the indoor temperature is <script type="math/tex">T_i=20°C</script>. The outdoor heat transfer coefficient is <script type="math/tex">h_e=16,7</script> W/m<script type="math/tex">^2</script>.K and the indoor one is <script type="math/tex">h_i=9,1</script> W/m<script type="math/tex">^2</script>.K</p>
+    <p>The outdoor temperature is <script type="math/tex">T_e=2°C</script> and the indoor temperature is <script type="math/tex">T_i=20°C</script>. The outdoor heat transfer coefficient is <script type="math/tex">h_e=16,7</script> W/m<script type="math/tex">^2</script>.K and the indoor one is <script type="math/tex">h_i=9,1</script> W/m<script type="math/tex">^2</script>.K</p>
 
-    <p><strong>1. Internal insulation</strong></p>
+    <p><strong>Exercise 1: inertia</strong></p>
 
     <p>Suppose an internal insulation.</p>
 
@@ -459,15 +457,23 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
       <li>Calculate the total stored heat and estimate the heat inertia.</li>
     </ul>
 
-    <p><strong>2. External insulation</strong></p>
-
     <p>Answer the same questions as above in the case of an external insulation</p>
+
+    <p><strong>Exercise 2: transient simulations</strong></p>
+
+    <p>Simulate the evolution of temperature inside the wall by following these steps:</p>
+
+    <ul>
+      <li>Discretise each material layer with a sufficient number of resistances and capacities (this is similar to a finite difference scheme)</li>
+      <li>Write the equations for the temporal evolution of temperature on each point. You can select either an implicit or an explicit scheme for time discretization.</li>
+      <li>Solve and plot the evolution of temperature at the interface between concrete and insulation, by supposing a uniform initial temperature <script type="math/tex">T=10°C</script></li>
+    </ul>
 
   </div>
 
 <div role="tabpanel" class="tab-pane" id="correction">
 
-    <p>La correction sera bientôt affichée. En attendant venez en cours.</p>
+    <p>The solution will be shown here soon.</p>
 
   </div>
 
@@ -479,6 +485,8 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
         <b>Tags: </b>
         
         
+        
+        <a href="tag_heat.html" class="btn btn-default navbar-btn cursorNorm" role="button">heat</a>
         
         
         
@@ -495,7 +503,7 @@ $$ C \dfrac{\partial T}{\partial t} = \frac{1}{R} (T_1-T) + \frac{1}{R} (T_2-T) 
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Nov 13, 2017 <br />
+ Site last generated: Nov 15, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

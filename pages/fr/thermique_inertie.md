@@ -59,9 +59,9 @@ On considère une paroi constituée de trois couches :
 | $$c_b=920$$ J/kg.K | $$c_i=920$$ J/kg.K | $$c_e=920$$ J/kg.K |
 | $$\rho_b=2700$$ kg/m$$^3$$ | $$\rho_i=75$$ kg/m$$^3$$ | $$\rho_e=2700$$ kg/m$$^3$$ |
 
-La température extérieure est $$T_e=-5°C$$ et la température intérieure est $$T_i=20°C$$. Le coefficient d'échange superficiel extérieur est $$h_e=16,7$$ W/m$$^2$$.K et le coefficient intérieur est $$h_i=9,1$$ W/m$$^2$$.K
+La température extérieure est $$T_e=2°C$$ et la température intérieure est $$T_i=20°C$$. Le coefficient d'échange superficiel extérieur est $$h_e=16,7$$ W/m$$^2$$.K et le coefficient intérieur est $$h_i=9,1$$ W/m$$^2$$.K
 
-**1. Isolation intérieure**
+**Exercice 1 : estimation de l'inertie**
 
 On suppose que l'isolant est du côté intérieur par rapport au béton.
 
@@ -69,15 +69,21 @@ On suppose que l'isolant est du côté intérieur par rapport au béton.
 * Calculer la température des interfaces entre les couches, et la température moyenne de chaque couche.
 * Calculer le volant thermique total de la paroi.
 
-**2. Isolation extérieure**
+Refaire ces calculs pour le cas où l'isolant est à l'extérieur par rapport au béton
 
-Répondre aux mêmes questions dans le cas où l'isolant est du côté extérieur par rapport au béton. Quelles sont les différences avec l'isolation intérieure ?
+**Exercice 2 : comportement dynamique**
+
+On veut simuler le comportement dynamique de cette paroi en réponse à des sollicitations extérieures.
+
+* Discrétiser chaque couche en un nombre suffisants de points et donner la valeur des résistances et capacités en chaque point (cela revient à une discrétisation de type différences finies)
+* Etablir les équations de l'évolution dans le temps de chaque point. On pourra prendre un schéma explicite si le pas de temps est suffisamment faible.
+* Résoudre et tracer l'évolution de la température à l'interface béton/isolant, en supposant une température initiale constante de $$T=10°C$$
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="correction" markdown="1">
 
-La correction sera bientôt affichée. En attendant venez en cours.
+La correction sera bientôt affichée.
 
 </div>
 

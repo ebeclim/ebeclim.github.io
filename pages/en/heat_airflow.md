@@ -1,6 +1,6 @@
 ---
 title: Air flow
-summary: "Faire un bilan de pression pour estimer les débits d'air entre les zones thermique"
+summary: "Estimate heat transfer caused by ventilation, wind and stack effect"
 permalink: heat_airflow.html
 keywords: heat, transfer, buildings, ventilation
 tags: [heat]
