@@ -1,5 +1,5 @@
 ---
-title: Summary project
+title: Summary exercise
 summary: "A longer exercise that uses the content from all previous lessons"
 permalink: heat_project.html
 keywords: heat, project
@@ -12,6 +12,7 @@ folder: en
 
 ## Questioning
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<img src="images/heat_project.png" style="width: 500px;">
 
-[Weather data file](/datafiles/Exercise data.xlsx)
+* Find the heating power required to maintain 19°C in the room for an average outdoor temperature of 9°C
+* Simulate the transient temperature of room 1 and 2, using the outdoor temperature from the [data file](/datafiles/Exercise data.xlsx)

@@ -182,6 +182,17 @@
 
 
 {
+"title": "Summary exercise",
+"tags": "heat",
+"keywords": "heat, project",
+"url": "heat_project.html",
+"summary": "A longer exercise that uses the content from all previous lessons"
+}
+,
+
+
+
+{
 "title": "Thermal radiation",
 "tags": "thermique",
 "keywords": "heat, transfer, radiation, irradiance",
@@ -371,6 +382,17 @@
 "keywords": "thermique, bâtiment, énergie",
 "url": "thermique_intro.html",
 "summary": "Les bilans de chaleur et les calculs de la réglementation thermique"
+}
+,
+
+
+
+{
+"title": "Mini-projet",
+"tags": "thermique",
+"keywords": "thermique, projet",
+"url": "thermique_projet.html",
+"summary": "Exercice plus long qui utilise les notions de toutes les leçons précédentes de thermique"
 }
 ,
 

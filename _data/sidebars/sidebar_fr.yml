@@ -39,6 +39,10 @@ entries:
       url: /thermique_ventilation.html
       output: web, pdf
 
+    - title: Mini-projet
+      url: /thermique_projet.html
+      output: web, pdf
+
   - title: Systèmes CVC
     output: web, pdf
     folderitems:

@@ -14,3 +14,4 @@ toc: false
 * [Inertie thermique](/thermique_inertie.html) (1 vidéo)
 * [Rayonnement](/thermique_rayonnement.html) (2 vidéos)
 * [Ventilation](/thermique_ventilation.html) (1 vidéo)
+* [Mini-projet](/thermique_projet.html)

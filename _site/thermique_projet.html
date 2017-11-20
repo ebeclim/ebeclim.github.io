@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Installations et systèmes pour le chauffage, la ventilation et la climatisation">
-<meta name="keywords" content="cvc,  bâtiment, énergie, chauffage, ventilation, climatisation">
-<title>Systèmes CVC | EBE clim</title>
+<meta name="description" content="Exercice plus long qui utilise les notions de toutes les leçons précédentes de thermique">
+<meta name="keywords" content="thermique,  thermique, projet">
+<title>Mini-projet | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -147,7 +147,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Systèmes CVC">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Mini-projet">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -235,7 +235,7 @@
           
           
           
-          <li><a href="thermique_projet.html">Mini-projet</a></li>
+          <li class="active"><a href="thermique_projet.html">Mini-projet</a></li>
           
           
           
@@ -338,7 +338,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Systèmes CVC</h1>
+   <h1 class="post-title-main">Mini-projet</h1>
 </div>
 
 
@@ -346,7 +346,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Installations et systèmes pour le chauffage, la ventilation et la climatisation</div>
+    <div class="summary">Exercice plus long qui utilise les notions de toutes les leçons précédentes de thermique</div>
    
 
     
@@ -377,9 +377,13 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <ul>
-  <li><a href="/cvc_1.html">Leçon 1</a> (1 vidéo)</li>
-  <li><a href="/cvc_2.html">Leçon 2</a> (1 vidéo)</li>
+  <h2 id="enonc">Enoncé</h2>
+
+<p><img src="images/heat_project.png" style="width: 500px;" /></p>
+
+<ul>
+  <li>Dimensionnez l’équipement de chauffage permettant de maintenir une température de 19°C dans la pièce 1, pour une température extérieure moyenne de 9°C</li>
+  <li>Calculez l’évolution de la température de chacune des deux pièces en utilisant la température extérieure fournie dans <a href="/datafiles/Exercise data.xlsx">ce fichier météo</a></li>
 </ul>
 
 
@@ -389,7 +393,7 @@ $('#toc').on('click', 'a', function() {
         
         
         
-        <a href="tag_cvc.html" class="btn btn-default navbar-btn cursorNorm" role="button">cvc</a>
+        <a href="tag_thermique.html" class="btn btn-default navbar-btn cursorNorm" role="button">thermique</a>
         
         
         

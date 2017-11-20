@@ -26,7 +26,7 @@ The unit of $$\Phi_{SW}$$ is [W], and not [W/m$$^2$$], since irradiances have be
 
 ### Video
 
-[PDF slides](/pdf/heat transfer 5 - short wave radiation.pdf)
+[PDF slides](/pdf/heat transfer 5 - long wave radiation.pdf)
 
 <iframe src="https://player.vimeo.com/video/242213846?color=ff9933&portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

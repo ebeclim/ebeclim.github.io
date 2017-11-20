@@ -39,6 +39,10 @@ entries:
       url: /heat_airflow.html
       output: web, pdf
 
+    - title: Summary exercise
+      url: /heat_project.html
+      output: web, pdf
+
   - title: HVAC systems
     output: web, pdf
     folderitems:

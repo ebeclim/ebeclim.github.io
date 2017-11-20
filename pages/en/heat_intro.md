@@ -14,3 +14,4 @@ toc: false
 * [Thermal inertia](/heat_inertia.html) (1 video)
 * [Thermal radiation](/heat_radiation.html) (2 videos)
 * [Air flow](/heat_airflow.html) (1 video)
+* [Summary exercise](/heat_project.html)
