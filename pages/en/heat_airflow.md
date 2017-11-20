@@ -55,7 +55,7 @@ $$z_n = \dfrac{P_e(0)-P_i(0)}{g(\rho_i-\rho_e)} $$
 
 A door of height $$H=2$$m and width $$w=1$$m separates two rooms at temperatures $$T_1=15°C$$ and $$T_2=21°C$$.
 
-Suppose (without proving it) that the air velocity at the interface is a function of the coordinate $z$$:
+Suppose (without proving it) that the air velocity at the interface is a function of the coordinate $$z$$:
 
 $$ V(z) = \sqrt{2\, \frac{P_1(z)-P_2(z)}{\rho}} $$
 
