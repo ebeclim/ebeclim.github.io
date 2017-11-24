@@ -83,7 +83,21 @@ On veut simuler le comportement dynamique de cette paroi en réponse à des soll
 
 <div role="tabpanel" class="tab-pane" id="correction" markdown="1">
 
-La correction sera bientôt affichée.
+**Exercice 1 : estimation de l'inertie**
+
+Dans le cas de l'isolation intérieure :
+
+* Résistance thermique totale : $$R=1.28$$ m$$^2$$.K/W
+* Flux thermique à travers le mur : $$\phi = 14.07$$ W/m$$^2$$
+* Températures aux interfaces: $$T = \left[ 2.84, 4.25, 18.31, 18.45\right] $$
+* Chaleur totale: $$Q=1.21$$ MJ
+
+Dans le cas de l'isolation extérieure :
+
+* Résistance thermique totale : $$R=1.28$$ m$$^2$$.K/W
+* Flux thermique à travers le mur : $$\phi = 14.07$$ W/m$$^2$$
+* Températures aux interfaces: $$T = \left[ 2.84, 16.91, 18.31, 18.45\right] $$
+* Chaleur totale: $$Q=6.45$$ MJ
 
 </div>
 

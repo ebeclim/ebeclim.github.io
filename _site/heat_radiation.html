@@ -399,23 +399,6 @@ $('#toc').on('click', 'a', function() {
 
 <h3 id="methodology">Methodology</h3>
 
-<table>
-<tr>
-<th> <img src="images/thermique GLO1.png" style="width: 450px;" /> </th>
-<th style="font-weight: normal">
-
-In order for the system to be solvable, either the temperature or the net heat flux on each surface must be known. We can then solve it by using these two formulas:
-<br />
-<img src="images/thermique GLO2.png" style="width: 200px;" />
-<br />
-This allows to either describe the system as an electrical circuit, or as a linear system of equations.
-
-</th>
-</tr>
-</table>
-
-<h3 id="view-factors">View factors</h3>
-
 <p>View factors <script type="math/tex">F_{ij}</script> are required to solve the radiative heat exchange between walls. Here are two formulas for view factors that two cover widespread specific cases:</p>
 
 <table>
@@ -448,6 +431,28 @@ $$  h=H/L \: ; \: w=W/L $$
 </tr>
 </table>
 
+<p>The problem can be solved either by using an equivalent electrical circuit as shown on the video, or by solving a linear system of equations with the method shown below.</p>
+
+<p>Either the net heat flux or the temperature of each wall <script type="math/tex">i</script> should be known. For each wall, write one of the following equations:</p>
+
+<ul>
+  <li>If the temperature <script type="math/tex">T_i</script> is known :</li>
+</ul>
+
+<script type="math/tex; mode=display">J_i =\varepsilon_i \sigma T_i^4 + \rho_i\sum_{j=1}^n J_j F_{ij}</script>
+
+<ul>
+  <li>If the net heat flux <script type="math/tex">\Phi_i</script> is known :</li>
+</ul>
+
+<script type="math/tex; mode=display">\frac{\Phi_i}{S_i} = J_i - \sum_{j=1}^n J_j F_{ij}</script>
+
+<p>We can write a system of equations of the type <script type="math/tex">Ax=b</script> where <script type="math/tex">A</script> is a <script type="math/tex">n \times n</script> matrix (<script type="math/tex">n</script>=number of surfaces) and <script type="math/tex">x</script> is the vector of radiosities. Once the system is solved and the radiosities are known, the following formula can be used to calculate the temperatures and heat fluxes that were initially unknown:</p>
+
+<script type="math/tex; mode=display">\frac{\Phi_i}{S_i} = \frac{\varepsilon_i}{1-\varepsilon_i}(\sigma T_i^4-J_i)</script>
+
+<p>An example of this methodology is proposed in the following exercise.</p>
+
 <h2 id="exercise">Exercise</h2>
 
 <ul id="profileTabs" class="nav nav-tabs">
@@ -470,13 +475,48 @@ $$  h=H/L \: ; \: w=W/L $$
       <li>All other surfaces have a temperature of <script type="math/tex">T = 20°C</script>.</li>
     </ul>
 
-    <p>Calculate the radiative heat loss through the window, the net heat flux given by the radiator and the temperature of the ground.</p>
+    <p>Calculate the radiative heat loss through the window, the net heat flux given by the radiator and the temperature of the ground. The emission coefficient of all surfaces is <script type="math/tex">\varepsilon=0.85</script></p>
 
   </div>
 
 <div role="tabpanel" class="tab-pane" id="correction">
 
-    <p>Solution will be here soon.</p>
+    <p>All the walls that have a temperature of <script type="math/tex">T = 20°C</script> can be considered as a single surface. The question is therefore equivalent to heat exchange balance between 4 surfaces: we need to write 4 equations.</p>
+
+    <p>First, the view factors are required. The formulas shown above only need to be used three times, to find the following values:</p>
+
+    <script type="math/tex; mode=display">F_{25}=0.1174 \: ; \: F_{20}=0.081 \: ; \: F_{50}= 0.0477</script>
+
+    <p>All other view factors can be calculated from the simple formulas: <script type="math/tex">S_iF_{ij}=S_jF_{ji}</script> et <script type="math/tex">\sum_j F_{ij}=1</script>.</p>
+
+    <p>We then need to write one equation for each surface. Surface 0 (the radiator) has a known temperature, which means:</p>
+
+    <script type="math/tex; mode=display">J_0 =\varepsilon_0 \sigma T_0^4 + \rho_i\sum_{j=1}^n J_j F_{0j}</script>
+
+    <p>Surface 2 (the floor) has a known heat flux of zero since it is adiabatic:</p>
+
+    <script type="math/tex; mode=display">0 = J_2 - \sum_{j=1}^n J_j F_{2j}</script>
+
+    <p>Surfaces 3 and 5 have the same kind of boundary condition as surface 2 (prescribed temperature): their equations are therefore similar. We end up with the following linear system of equations for the radiosities:</p>
+
+    <script type="math/tex; mode=display">% <![CDATA[
+\begin{bmatrix} 1-\rho_0F_{00} & -\rho_0F_{02} & -\rho_0F_{03} & -\rho_0F_{05} \\ -F_{20} & 1-F_{22} & -F_{23} & -F_{25}  \\
+-\rho_3F_{30} & -\rho_3F_{32} & 1-\rho_3F_{33} & -\rho_3F_{35} \\ -\rho_5F_{50} & -\rho_5F_{52} & \rho_5F_{53} & 1-\rho_5F_{55}
+\end{bmatrix}
+\begin{bmatrix} J_0 \\ J_2 \\ J_3 \\ J_5 \end{bmatrix} =
+\begin{bmatrix} \varepsilon_0\sigma T_0^4 \\ 0 \\ \varepsilon_3\sigma T_3^4 \\ \varepsilon_5\sigma T_5^4 \end{bmatrix} %]]></script>
+
+    <p>Solving this system results in the following values in W/m<script type="math/tex">^2</script>:</p>
+
+    <script type="math/tex; mode=display">J_0 = 656.61 \: ; \: J_2 = 433.23 \: ; \: J_3 = 420.45 \: ; \: J_5 = 366.34</script>
+
+    <p>The last step is to use this formula:</p>
+
+    <script type="math/tex; mode=display">\frac{\Phi_i}{S_i} = \frac{\varepsilon_i}{1-\varepsilon_i}(\sigma T_i^4-J_i)</script>
+
+    <p>in order to find the target values of the exercise: floor temperature <script type="math/tex">T_2</script>, radiator heat flux <script type="math/tex">\Phi_0</script> and net heat flux on the window <script type="math/tex">\Phi_5</script>:</p>
+
+    <script type="math/tex; mode=display">T_2= 22.5°C \: ; \: \Phi_0=711.53 W \: ; \: \Phi_5=-410.27 W</script>
 
   </div>
 
@@ -506,7 +546,7 @@ $$  h=H/L \: ; \: w=W/L $$
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Nov 20, 2017 <br />
+ Site last generated: Nov 24, 2017 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

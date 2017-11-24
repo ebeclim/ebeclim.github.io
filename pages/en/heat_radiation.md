@@ -32,23 +32,6 @@ The unit of $$\Phi_{SW}$$ is [W], and not [W/m$$^2$$], since irradiances have be
 
 ### Methodology
 
-<table>
-<tr>
-<th> <img src="images/thermique GLO1.png" style="width: 450px;"> </th>
-<th style="font-weight: normal">
-
-In order for the system to be solvable, either the temperature or the net heat flux on each surface must be known. We can then solve it by using these two formulas:
-<br>
-<img src="images/thermique GLO2.png" style="width: 200px;">
-<br>
-This allows to either describe the system as an electrical circuit, or as a linear system of equations.
-
-</th>
-</tr>
-</table>
-
-### View factors
-
 View factors $$F_{ij}$$ are required to solve the radiative heat exchange between walls. Here are two formulas for view factors that two cover widespread specific cases:
 
 <table>
@@ -81,6 +64,24 @@ $$  h=H/L \: ; \: w=W/L $$
 </tr>
 </table>
 
+The problem can be solved either by using an equivalent electrical circuit as shown on the video, or by solving a linear system of equations with the method shown below.
+
+Either the net heat flux or the temperature of each wall $$i$$ should be known. For each wall, write one of the following equations:
+
+* If the temperature $$T_i$$ is known :
+
+$$J_i =\varepsilon_i \sigma T_i^4 + \rho_i\sum_{j=1}^n J_j F_{ij}$$
+
+* If the net heat flux $$\Phi_i$$ is known :
+
+$$\frac{\Phi_i}{S_i} = J_i - \sum_{j=1}^n J_j F_{ij}$$
+
+We can write a system of equations of the type $$Ax=b$$ where $$A$$ is a $$n \times n$$ matrix ($$n$$=number of surfaces) and $$x$$ is the vector of radiosities. Once the system is solved and the radiosities are known, the following formula can be used to calculate the temperatures and heat fluxes that were initially unknown:
+
+$$\frac{\Phi_i}{S_i} = \frac{\varepsilon_i}{1-\varepsilon_i}(\sigma T_i^4-J_i) $$
+
+An example of this methodology is proposed in the following exercise.
+
 ## Exercise
 
 <ul id="profileTabs" class="nav nav-tabs">
@@ -101,13 +102,50 @@ Consider this room:
 * The surface $$S_2$$ (the ground) is adiabatic.
 * All other surfaces have a temperature of $$T = 20°C$$.
 
-Calculate the radiative heat loss through the window, the net heat flux given by the radiator and the temperature of the ground.
+Calculate the radiative heat loss through the window, the net heat flux given by the radiator and the temperature of the ground. The emission coefficient of all surfaces is $$\varepsilon=0.85$$
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="correction" markdown="1">
 
-Solution will be here soon.
+
+All the walls that have a temperature of $$T = 20°C$$ can be considered as a single surface. The question is therefore equivalent to heat exchange balance between 4 surfaces: we need to write 4 equations.
+
+First, the view factors are required. The formulas shown above only need to be used three times, to find the following values:
+
+$$ F_{25}=0.1174 \: ; \: F_{20}=0.081 \: ; \: F_{50}= 0.0477$$
+
+All other view factors can be calculated from the simple formulas: $$S_iF_{ij}=S_jF_{ji}$$ et $$\sum_j F_{ij}=1$$.
+
+We then need to write one equation for each surface. Surface 0 (the radiator) has a known temperature, which means:
+
+$$J_0 =\varepsilon_0 \sigma T_0^4 + \rho_i\sum_{j=1}^n J_j F_{0j}$$
+
+Surface 2 (the floor) has a known heat flux of zero since it is adiabatic:
+
+$$0 = J_2 - \sum_{j=1}^n J_j F_{2j}$$
+
+Surfaces 3 and 5 have the same kind of boundary condition as surface 2 (prescribed temperature): their equations are therefore similar. We end up with the following linear system of equations for the radiosities:
+
+$$\begin{bmatrix} 1-\rho_0F_{00} & -\rho_0F_{02} & -\rho_0F_{03} & -\rho_0F_{05} \\ -F_{20} & 1-F_{22} & -F_{23} & -F_{25}  \\
+-\rho_3F_{30} & -\rho_3F_{32} & 1-\rho_3F_{33} & -\rho_3F_{35} \\ -\rho_5F_{50} & -\rho_5F_{52} & \rho_5F_{53} & 1-\rho_5F_{55}
+\end{bmatrix}
+\begin{bmatrix} J_0 \\ J_2 \\ J_3 \\ J_5 \end{bmatrix} =
+\begin{bmatrix} \varepsilon_0\sigma T_0^4 \\ 0 \\ \varepsilon_3\sigma T_3^4 \\ \varepsilon_5\sigma T_5^4 \end{bmatrix}
+$$
+
+Solving this system results in the following values in W/m$$^2$$:
+
+$$ J_0 = 656.61 \: ; \: J_2 = 433.23 \: ; \: J_3 = 420.45 \: ; \: J_5 = 366.34 $$
+
+The last step is to use this formula:
+
+$$\frac{\Phi_i}{S_i} = \frac{\varepsilon_i}{1-\varepsilon_i}(\sigma T_i^4-J_i) $$
+
+in order to find the target values of the exercise: floor temperature $$T_2$$, radiator heat flux $$\Phi_0$$ and net heat flux on the window $$\Phi_5$$:
+
+$$T_2= 22.5°C \: ; \: \Phi_0=711.53 W \: ; \: \Phi_5=-410.27 W$$
+
 
 </div>
 
