@@ -3,7 +3,6 @@ title: Control systems
 summary: "Méthodes pour faire suivre automatiquement une consigne à un équipement"
 permalink: control_intro.html
 keywords: bâtiment, énergie, régulation
-tags: [régulation]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

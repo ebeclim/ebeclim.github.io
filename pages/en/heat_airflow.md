@@ -3,7 +3,6 @@ title: Air flow
 summary: "Estimate heat transfer caused by ventilation, wind and stack effect"
 permalink: heat_airflow.html
 keywords: heat, transfer, buildings, ventilation
-tags: [heat]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

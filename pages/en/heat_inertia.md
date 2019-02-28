@@ -3,7 +3,6 @@ title: Thermal inertia
 summary: "How to estimate dynamic effects in a more or less simplified way"
 permalink: heat_inertia.html
 keywords: heat, transfer, inertia, transient
-tags: [heat]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

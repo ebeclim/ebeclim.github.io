@@ -3,7 +3,6 @@ title: "A propos de ce site"
 summary:
 permalink: about.html
 keywords: ebe, environnement, bâtiment, énergie, polytech
-tags: [index, sommaire]
 sidebar: sidebar_en
 topnav: topnav_en
 toc: false

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Première leçon CVC">
-<meta name="keywords" content="cvc,  bâtiment, énergie, chauffage, ventilation, climatisation">
-<title>Leçon 1 | EBE clim</title>
+<meta name="description" content="La production et la distribution dans les réseaux hydrauliques pour le chauffage">
+<meta name="keywords" content="chauffage,  bâtiment, énergie, chauffage, ventilation, climatisation">
+<title>Production et distribution | EBE clim</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -147,7 +147,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Leçon 1">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Production et distribution">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -246,19 +246,33 @@
       
   
   <li>
-      <a href="#">Systèmes CVC</a>
+      <a href="#">Chauffage et ECS</a>
       <ul>
           
           
           
-          <li class="active"><a href="cvc_1.html">CVC leçon 1</a></li>
+          <li class="active"><a href="cvc_prodistrib.html">Production et distribution</a></li>
           
           
           
           
           
           
-          <li><a href="cvc_2.html">CVC leçon 2</a></li>
+          <li><a href="cvc_equilibrage.html">Equilibrage hydraulique</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="cvc_emetteurs.html">Emetteurs de chaleur</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="cvc_ecs.html">Eau chaude sanitaire</a></li>
           
           
           
@@ -269,7 +283,7 @@
       
   
   <li>
-      <a href="#">Air humide</a>
+      <a href="#">Traitement d'air</a>
       <ul>
           
           
@@ -289,6 +303,13 @@
           
           
           <li><a href="airhumide_transformations.html">Transformations et CTA</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="airhumide_ctadouble.html">CTA double flux</a></li>
           
           
           
@@ -338,7 +359,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Leçon 1</h1>
+   <h1 class="post-title-main">Production et distribution</h1>
 </div>
 
 
@@ -346,7 +367,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Première leçon CVC</div>
+    <div class="summary">La production et la distribution dans les réseaux hydrauliques pour le chauffage</div>
    
 
     
@@ -377,17 +398,47 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="vidos">Vidéos</h2>
+  <h2 id="vido">Vidéo</h2>
 
-<p>Section vidéos</p>
+<iframe src="https://player.vimeo.com/video/320511676?color=ff9933&amp;portrait=0" width="640" height="480" frameborder="1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
 <h2 id="formulaire">Formulaire</h2>
 
-<p>Section formulaire</p>
+<p>La régulation de la puissance d’un émetteur de chaleur peut se faire soit en faisant varier la température de l’eau qui y est envoyée, soit en faisant varier son débit. Dans les deux cas, c’est par une vanne 3 voie qu’est effectué le réglage.</p>
+
+<p>Si la vanne est en <strong>mode mélange</strong>, le débit dans les émetteurs est fixé par un circulateur en aval de la vanne. Ce débit est un mélange d’eau chaude venant de la chaudière et d’eau recirculée depuis l’émetteur, donc plus froide.</p>
+
+<table>
+<tr>
+<th> <img src="images/chauffage melange.png" style="width: 350px;" /> </th>
+<th style="font-weight: normal">
+La puissance (W) de l'émetteur est donnée par son débit (kg/s) et la différence de température entrée-sortie :
+$$ P = \dot{m} \, c \, (T_1-T_2) $$
+Le débit dans l'émetteur est la somme de celui fourni par la chaudière et de celui revenant dans le by-pass :
+$$ \dot{m} = \dot{m}_0 + \dot{m}_{BP}$$
+Le flux thermique sortant de la vanne est la somme des deux flux thermiques qui y rentrent :
+$$ \dot{m} \, c \, T_1 = \dot{m}_0 \, c \, T_0 + \dot{m}_{BP} \, c \, T_2$$
+</th>
+</tr>
+</table>
+
+<p>Si la vanne est en <strong>mode décharge</strong>, la température de l’eau arrivant vers les émetteurs est égale à celle de la boucle primaire. C’est son débit qui pourra varier selon l’ouverture de la vanne.</p>
+
+<table>
+<tr>
+<th> <img src="images/chauffage decharge.png" style="width: 350px;" /> </th>
+<th style="font-weight: normal">
+La puissance (W) de l'émetteur est donnée par son débit (kg/s) et la différence de température entrée-sortie :
+$$ P = \dot{m} \, c \, (T_0-T_2) $$
+Le débit dans l'émetteur est plus faible que celui fourni par la chaudière du fait de l'eau dirigée vers le by-pass :
+$$ \dot{m} = \dot{m}_0 - \dot{m}_{BP}$$
+</th>
+</tr>
+</table>
 
 <h2 id="exercices">Exercices</h2>
 
-<p>Section exercices</p>
+<p>J’ajouterai peut-être un exercice ici.</p>
 
 
     <div class="tags">
@@ -395,8 +446,6 @@ $('#toc').on('click', 'a', function() {
         <b>Tags: </b>
         
         
-        
-        <a href="tag_cvc.html" class="btn btn-default navbar-btn cursorNorm" role="button">cvc</a>
         
         
         
@@ -412,8 +461,8 @@ $('#toc').on('click', 'a', function() {
 <footer>
             <div class="row">
                 <div class="col-lg-12 footer">
-               &copy;2017 Polytech Annecy-Chambéry. All rights reserved. <br />
- Site last generated: Nov 24, 2017 <br />
+               &copy;2019 Polytech Annecy-Chambéry. All rights reserved. <br />
+ Site last generated: Feb 28, 2019 <br />
 <p><img src="images/company_logo.jpg" alt="Company logo" height="70"/></p>
                 </div>
             </div>

@@ -14,6 +14,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/airhumide_ctadouble.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/airhumide_dah.html</loc>
   </url>
   
@@ -62,19 +68,31 @@
   
   
   <url>
-    <loc>http://localhost:4000/cvc_1.html</loc>
+    <loc>http://localhost:4000/cvc_ecs.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/cvc_2.html</loc>
+    <loc>http://localhost:4000/cvc_emetteurs.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cvc_equilibrage.html</loc>
   </url>
   
   
   
   <url>
     <loc>http://localhost:4000/cvc_intro.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/cvc_prodistrib.html</loc>
   </url>
   
   

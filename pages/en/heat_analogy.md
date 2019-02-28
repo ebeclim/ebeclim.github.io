@@ -3,7 +3,6 @@ title: Thermal-electrical analogy
 summary: "Calculating heat transfer as if it were electric current"
 permalink: heat_analogy.html
 keywords: heat, transfer, electronic, analogy
-tags: [heat]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

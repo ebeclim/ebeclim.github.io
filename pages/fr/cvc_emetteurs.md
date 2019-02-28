@@ -1,9 +1,9 @@
 ---
-title: Leçon 2
-summary: "Deuxième leçon CVC"
-permalink: cvc_2.html
+title: Emetteurs de chaleur
+summary: "Quelques principes et calculs sur les radiateurs et planchers chauffants"
+permalink: cvc_emetteurs.html
 keywords: bâtiment, énergie, chauffage, ventilation, climatisation
-tags: [cvc]
+tags: [chauffage]
 sidebar: sidebar_fr
 topnav: topnav_fr
 folder: fr

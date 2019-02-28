@@ -3,7 +3,7 @@ title: Diagramme de l'air humide
 summary: "Comment lire le diagramme de l'air humide et y relever les propriétés de l'air"
 permalink: airhumide_dah.html
 keywords: bâtiment, énergie, humidité
-tags: [humidité]
+tags: [traitement]
 sidebar: sidebar_fr
 topnav: topnav_fr
 folder: fr

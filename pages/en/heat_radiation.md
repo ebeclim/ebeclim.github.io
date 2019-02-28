@@ -3,7 +3,6 @@ title: Thermal radiation
 summary: "How to include heat input from the sun and radiative heat exchange between walls"
 permalink: heat_radiation.html
 keywords: heat, transfer, radiation, irradiance
-tags: [thermique]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en
@@ -32,7 +31,7 @@ The unit of $$\Phi_{SW}$$ is [W], and not [W/m$$^2$$], since irradiances have be
 
 ### Methodology
 
-View factors $$F_{ij}$$ are required to solve the radiative heat exchange between walls. Here are two formulas for view factors that two cover widespread specific cases:
+View factors $$F_{ij}$$ are required to solve the radiative heat exchange between walls. Here are two formulas for view factors that cover two widespread specific cases:
 
 <table>
 <tr>

@@ -15,6 +15,8 @@ Ce site est un complément de révision pour les étudiants de la formation Envi
 
 Le site est composé des quatre modules ci-dessous, qui contiennent chacun plusieurs leçons. Chaque leçon peut contenir une ou plusieurs vidéos, un formulaire, des exercices, etc.
 
+**Dernière mise à jour le 28 février 2019** : je suis en train de remplir la section [Chauffage et ECS](/cvc_intro.html). La section régulation sera enfin complétée au printemps.
+
 <div class="row">
 
          <div class="col-md-3 col-sm-6">
@@ -41,8 +43,8 @@ Le site est composé des quatre modules ci-dessous, qui contiennent chacun plusi
                      </span>
                  </div>
                  <div class="panel-body">
-                     <h4>Systèmes CVC</h4>
-                     <p>Les équipements de chauffage, ventilation et climatisation</p>
+                     <h4>Chauffage et ECS</h4>
+                     <p>Les réseaux hydrauliques pour le chauffage et la production d'ECS</p>
                      <a href="cvc_intro.html" class="btn btn-primary">Sommaire</a>
                  </div>
              </div>
@@ -56,8 +58,8 @@ Le site est composé des quatre modules ci-dessous, qui contiennent chacun plusi
                      </span>
                  </div>
                  <div class="panel-body">
-                     <h4>Air humide</h4>
-                     <p>Le traitement de l'air, de la lecture du diagramme de l'air humide aux CTA </p>
+                     <h4>Traitement d'air</h4>
+                     <p>De la lecture du diagramme de l'air humide aux CTA </p>
                      <a href="airhumide_intro.html" class="btn btn-primary">Sommaire</a>
                  </div>
              </div>

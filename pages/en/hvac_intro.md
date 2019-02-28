@@ -3,7 +3,6 @@ title: HVAC systems
 summary: "Installations et systèmes pour le chauffage, la ventilation et la climatisation"
 permalink: hvac_intro.html
 keywords: bâtiment, énergie, chauffage, ventilation, climatisation
-tags: [cvc]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

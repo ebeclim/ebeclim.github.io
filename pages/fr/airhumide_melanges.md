@@ -3,7 +3,7 @@ title: Mélanges d'air humide
 summary: "Comment calculer les propriétés de mélanges d'air humide"
 permalink: airhumide_melanges.html
 keywords: bâtiment, énergie, humidité
-tags: [humidité]
+tags: [traitement]
 sidebar: sidebar_fr
 topnav: topnav_fr
 folder: fr

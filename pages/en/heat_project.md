@@ -3,7 +3,6 @@ title: Summary exercise
 summary: "A longer exercise that uses the content from all previous lessons"
 permalink: heat_project.html
 keywords: heat, project
-tags: [heat]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

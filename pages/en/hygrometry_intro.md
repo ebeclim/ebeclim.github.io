@@ -3,7 +3,6 @@ title: Hygrometry
 summary: "How to read the psychrometric chart, formulate the properties of air mixtures and air handling units"
 permalink: hygrometry_intro.html
 keywords: humidity, air handling
-tags: [humidity]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

@@ -5,7 +5,7 @@
 
 {
 "title": "A propos de ce site",
-"tags": "indexsommaire",
+"tags": "",
 "keywords": "ebe, environnement, bâtiment, énergie, polytech",
 "url": "about.html",
 "summary": ""
@@ -15,8 +15,19 @@
 
 
 {
+"title": "Les CTA double flux",
+"tags": "traitement",
+"keywords": "bâtiment, énergie, humidité, cta",
+"url": "airhumide_ctadouble.html",
+"summary": "Le principe des CTA double flux avec échangeur de chaleur ou recirculation d'air"
+}
+,
+
+
+
+{
 "title": "Diagramme de l&#39;air humide",
-"tags": "humidité",
+"tags": "traitement",
 "keywords": "bâtiment, énergie, humidité",
 "url": "airhumide_dah.html",
 "summary": "Comment lire le diagramme de l'air humide et y relever les propriétés de l'air"
@@ -26,7 +37,7 @@
 
 
 {
-"title": "Air humide",
+"title": "Traitement d&#39;air",
 "tags": "humidité",
 "keywords": "bâtiment, énergie, humidité",
 "url": "airhumide_intro.html",
@@ -38,7 +49,7 @@
 
 {
 "title": "Mélanges d&#39;air humide",
-"tags": "humidité",
+"tags": "traitement",
 "keywords": "bâtiment, énergie, humidité",
 "url": "airhumide_melanges.html",
 "summary": "Comment calculer les propriétés de mélanges d'air humide"
@@ -71,7 +82,7 @@
 
 {
 "title": "Lesson 1",
-"tags": "régulation",
+"tags": "",
 "keywords": "bâtiment, énergie, régulation",
 "url": "control_1.html",
 "summary": "Leçon 1 de régulation"
@@ -82,7 +93,7 @@
 
 {
 "title": "Lesson 2",
-"tags": "régulation",
+"tags": "",
 "keywords": "bâtiment, énergie, régulation",
 "url": "control_2.html",
 "summary": "Leçon 2 de régulation"
@@ -93,7 +104,7 @@
 
 {
 "title": "Control systems",
-"tags": "régulation",
+"tags": "",
 "keywords": "bâtiment, énergie, régulation",
 "url": "control_intro.html",
 "summary": "Méthodes pour faire suivre automatiquement une consigne à un équipement"
@@ -103,33 +114,55 @@
 
 
 {
-"title": "Leçon 1",
-"tags": "cvc",
+"title": "Eau chaude sanitaire",
+"tags": "chauffage",
 "keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
-"url": "cvc_1.html",
-"summary": "Première leçon CVC"
+"url": "cvc_ecs.html",
+"summary": "Les trois modes de production de l'eau chaude sanitaire"
 }
 ,
 
 
 
 {
-"title": "Leçon 2",
-"tags": "cvc",
+"title": "Emetteurs de chaleur",
+"tags": "chauffage",
 "keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
-"url": "cvc_2.html",
-"summary": "Deuxième leçon CVC"
+"url": "cvc_emetteurs.html",
+"summary": "Quelques principes et calculs sur les radiateurs et planchers chauffants"
 }
 ,
 
 
 
 {
-"title": "Systèmes CVC",
-"tags": "cvc",
+"title": "Equilibrage hydraulique",
+"tags": "chauffage",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "cvc_equilibrage.html",
+"summary": "Le principe de l'équilibrage et le réglage des vannes"
+}
+,
+
+
+
+{
+"title": "Réseaux hydrauliques de chauffage",
+"tags": "chauffage",
 "keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
 "url": "cvc_intro.html",
-"summary": "Installations et systèmes pour le chauffage, la ventilation et la climatisation"
+"summary": "Le choix et le dimensionnement du chauffage par eau"
+}
+,
+
+
+
+{
+"title": "Production et distribution",
+"tags": "chauffage",
+"keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
+"url": "cvc_prodistrib.html",
+"summary": "La production et la distribution dans les réseaux hydrauliques pour le chauffage"
 }
 ,
 
@@ -139,7 +172,7 @@
 
 {
 "title": "Air flow",
-"tags": "heat",
+"tags": "",
 "keywords": "heat, transfer, buildings, ventilation",
 "url": "heat_airflow.html",
 "summary": "Estimate heat transfer caused by ventilation, wind and stack effect"
@@ -150,7 +183,7 @@
 
 {
 "title": "Thermal-electrical analogy",
-"tags": "heat",
+"tags": "",
 "keywords": "heat, transfer, electronic, analogy",
 "url": "heat_analogy.html",
 "summary": "Calculating heat transfer as if it were electric current"
@@ -161,7 +194,7 @@
 
 {
 "title": "Thermal inertia",
-"tags": "heat",
+"tags": "",
 "keywords": "heat, transfer, inertia, transient",
 "url": "heat_inertia.html",
 "summary": "How to estimate dynamic effects in a more or less simplified way"
@@ -172,7 +205,7 @@
 
 {
 "title": "Heat transfer",
-"tags": "heat",
+"tags": "",
 "keywords": "heat, transfer, buildings",
 "url": "heat_intro.html",
 "summary": "How to estimate heat loss coefficients of buildings due to either conductive, convective or radiative transfer"
@@ -183,7 +216,7 @@
 
 {
 "title": "Summary exercise",
-"tags": "heat",
+"tags": "",
 "keywords": "heat, project",
 "url": "heat_project.html",
 "summary": "A longer exercise that uses the content from all previous lessons"
@@ -194,7 +227,7 @@
 
 {
 "title": "Thermal radiation",
-"tags": "thermique",
+"tags": "",
 "keywords": "heat, transfer, radiation, irradiance",
 "url": "heat_radiation.html",
 "summary": "How to include heat input from the sun and radiative heat exchange between walls"
@@ -205,7 +238,7 @@
 
 {
 "title": "Lesson 1",
-"tags": "cvc",
+"tags": "",
 "keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
 "url": "hvac_1.html",
 "summary": "Première leçon CVC"
@@ -216,7 +249,7 @@
 
 {
 "title": "Lesson 2",
-"tags": "cvc",
+"tags": "",
 "keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
 "url": "hvac_2.html",
 "summary": "Deuxième leçon CVC"
@@ -227,7 +260,7 @@
 
 {
 "title": "HVAC systems",
-"tags": "cvc",
+"tags": "",
 "keywords": "bâtiment, énergie, chauffage, ventilation, climatisation",
 "url": "hvac_intro.html",
 "summary": "Installations et systèmes pour le chauffage, la ventilation et la climatisation"
@@ -238,7 +271,7 @@
 
 {
 "title": "Air handling units",
-"tags": "humidité",
+"tags": "",
 "keywords": "bâtiment, énergie, humidité",
 "url": "hygrometry_ahu.html",
 "summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
@@ -249,7 +282,7 @@
 
 {
 "title": "The psychrometric chart",
-"tags": "humidité",
+"tags": "",
 "keywords": "humidity, psychrometrics, moisture",
 "url": "hygrometry_chart.html",
 "summary": "How to read the psychrometric chart"
@@ -260,7 +293,7 @@
 
 {
 "title": "Hygrometry",
-"tags": "humidity",
+"tags": "",
 "keywords": "humidity, air handling",
 "url": "hygrometry_intro.html",
 "summary": "How to read the psychrometric chart, formulate the properties of air mixtures and air handling units"
@@ -271,7 +304,7 @@
 
 {
 "title": "The psychrometric chart",
-"tags": "humidité",
+"tags": "",
 "keywords": "bâtiment, énergie, humidité",
 "url": "hygrometry_chart.html",
 "summary": "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
@@ -293,7 +326,7 @@
 
 {
 "title": "Environment Building Energy",
-"tags": "indexsommaire",
+"tags": "",
 "keywords": "ebe, environnement, bâtiment, énergie, polytech",
 "url": "index_en.html",
 "summary": ""

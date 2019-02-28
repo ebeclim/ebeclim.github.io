@@ -43,19 +43,27 @@ entries:
       url: /thermique_projet.html
       output: web, pdf
 
-  - title: Systèmes CVC
+  - title: Chauffage et ECS
     output: web, pdf
     folderitems:
 
-    - title: CVC leçon 1
-      url: /cvc_1.html
+    - title: Production et distribution
+      url: /cvc_prodistrib.html
       output: web, pdf
 
-    - title: CVC leçon 2
-      url: /cvc_2.html
+    - title: Equilibrage hydraulique
+      url: /cvc_equilibrage.html
       output: web, pdf
 
-  - title: Air humide
+    - title: Emetteurs de chaleur
+      url: /cvc_emetteurs.html
+      output: web, pdf
+
+    - title: Eau chaude sanitaire
+      url: /cvc_ecs.html
+      output: web, pdf
+
+  - title: Traitement d'air
     output: web, pdf
     folderitems:
 
@@ -69,6 +77,10 @@ entries:
 
     - title: Transformations et CTA
       url: /airhumide_transformations.html
+      output: web, pdf
+
+    - title: CTA double flux
+      url: /airhumide_ctadouble.html
       output: web, pdf
 
   - title: Régulation

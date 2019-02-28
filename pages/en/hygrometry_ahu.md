@@ -3,7 +3,6 @@ title: Air handling units
 summary: "Comment lire le diagramme de l'air humide, y relever les propriétés de l'air et y représenter les mélanges"
 permalink: hygrometry_ahu.html
 keywords: bâtiment, énergie, humidité
-tags: [humidité]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

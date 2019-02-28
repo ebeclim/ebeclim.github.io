@@ -3,7 +3,6 @@ title: "Environment Building Energy"
 summary:
 permalink: index_en.html
 keywords: ebe, environnement, bâtiment, énergie, polytech
-tags: [index, sommaire]
 sidebar: sidebar_en
 topnav: topnav_en
 toc: false

@@ -3,7 +3,6 @@ title: The psychrometric chart
 summary: "How to read the psychrometric chart"
 permalink: hygrometry_chart.html
 keywords: humidity, psychrometrics, moisture
-tags: [humidité]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en

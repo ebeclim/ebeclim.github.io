@@ -3,7 +3,6 @@ title: Heat transfer
 summary: "How to estimate heat loss coefficients of buildings due to either conductive, convective or radiative transfer"
 permalink: heat_intro.html
 keywords: heat, transfer, buildings
-tags: [heat]
 sidebar: sidebar_en
 topnav: topnav_en
 folder: en
